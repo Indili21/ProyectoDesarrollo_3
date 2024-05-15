@@ -1,0 +1,192 @@
+
+/*//////////////////////////////////////////////////////////////////////////*/
+/*//////////////////////////   CCS CONTACTANOS   //////////////////////////*/
+/*////////////////////////////////////////////////////////////////////////*/
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 30px;
+    color: #150C21;
+    
+    
+}
+
+
+
+
+/*//////////////////////////////////////////////////////////////////////////*/
+/*////////////////////////////   TARJETA UNO   ////////////////////////////*/
+/*////////////////////////////////////////////////////////////////////////*/
+.tarjeta1 {
+    width: 90%; /* Tamaño fijo de la tarjeta */
+    height: 200px; /* Tamaño fijo de la tarjeta */
+    background-image: url('esencia_ima/de_uno.png'); /* Ruta de la imagen de fondo */
+    background-size: cover; /* Ajusta el tamaño de la imagen para cubrir la tarjeta */
+    background-position: center; /* Centra la imagen de fondo */
+    border-radius: 10px; /* Borde redondeado */
+    overflow: hidden; /* Oculta cualquier contenido que se desborde de la tarjeta */
+    position: relative; /* Necesario para posicionar el contenido de manera absoluta */
+    margin: 0 auto; /*centrado*/
+    margin-top: 100px;/* Agrega un margen superior */
+   
+}
+
+.contenido1 {
+    position: absolute; /* Posiciona el contenido de manera absoluta dentro de la tarjeta */
+    top: 50%; /* Lo coloca en la mitad superior de la tarjeta */
+    left: 50%; /* Lo coloca en el centro horizontal de la tarjeta */
+    transform: translate(-50%, -50%); /* Lo centra vertical y horizontalmente */
+    text-align: center; /* Centra el texto horizontalmente */
+    color: white; /* Color del texto */
+    text-decoration: none; /* Quita la subrayado predeterminado del enlace */
+    font-size: 24px; /* Tamaño del texto */
+}
+ 
+.contenido1 h3:hover {
+     color: #150C21; /* Color de texto al pasar el mouse */
+     cursor: pointer;
+}
+
+.oculto { /* Oculta los elementos h4 por defecto */
+    display: none;
+}
+
+
+/*//////////////////////////////////////////////////////////////////////////*/
+/*////////////////////////////   TARJETA DOS   ////////////////////////////*/
+/*////////////////////////////////////////////////////////////////////////*/
+.tarjeta2 {
+    width: 90%; /* Tamaño fijo de la tarjeta */
+    height: 200px; /* Tamaño fijo de la tarjeta */
+    background-image: url('esencia_ima/de_dos.png'); /* Ruta de la imagen de fondo */
+    background-size: cover; /* Ajusta el tamaño de la imagen para cubrir la tarjeta */
+    background-position: center; /* Centra la imagen de fondo */
+    border-radius: 10px; /* Borde redondeado */
+    overflow: hidden; /* Oculta cualquier contenido que se desborde de la tarjeta */
+    position: relative; /* Necesario para posicionar el contenido de manera absoluta */
+    margin: 0 auto;
+    margin-top: 30px;/* Agrega un margen superior */
+}
+
+.contenido2 {
+    position: absolute; /* Posiciona el contenido de manera absoluta dentro de la tarjeta */
+    top: 50%; /* Lo coloca en la mitad superior de la tarjeta */
+    left: 50%; /* Lo coloca en el centro horizontal de la tarjeta */
+    transform: translate(-50%, -50%); /* Lo centra vertical y horizontalmente */
+    text-align: center; /* Centra el texto horizontalmente */
+    color: white; /* Color del texto */
+    text-decoration: none; /* Quita la subrayado predeterminado del enlace */
+    font-size: 24px; /* Tamaño del texto */
+}
+ 
+.contenido2 h3:hover {
+     color: #150C21; /* Color de texto al pasar el mouse */
+}
+
+
+/*//////////////////////////////////////////////////////////////////////////*/
+/*/////////////////////////   TARJETA INSTAGRAM   /////////////////////////*/
+/*////////////////////////////////////////////////////////////////////////*/
+.tarjeta3 {
+    width: 90%; 
+    height: 200px; 
+    background-image: url('esencia_ima/de_tres.png'); 
+    background-size: cover; 
+    background-position: center; 
+    border-radius: 10px;
+    overflow: hidden; 
+    position: relative; 
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.contenido3 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    text-align: center; 
+    color: white; 
+    text-decoration: none; 
+    font-size: 24px; 
+}
+ 
+.contenido3 h3:hover {
+     color: #150C21;
+}
+
+
+/*//////////////////////////////////////////////////////////////////////////*/
+/*/////////////////////////   TARJETA FACEBOOK   //////////////////////////*/
+/*////////////////////////////////////////////////////////////////////////*/
+.tarjeta4 {
+    width: 90%; 
+    height: 200px; 
+    background-image: url('esencia_ima/de_cuatro.png'); 
+    background-size: cover; 
+    background-position: center; 
+    border-radius: 10px;
+    overflow: hidden; 
+    position: relative; 
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.contenido4 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    text-align: center; 
+    color: white; 
+    text-decoration: none; 
+    font-size: 24px; 
+}
+ 
+.contenido4 h3:hover {
+     color: #150C21;
+}
+
+
+/*//////////////////////////////////////////////////////////////////////////*/
+/*/////////////////////////   TARJETA PINTEREST   /////////////////////////*/
+/*////////////////////////////////////////////////////////////////////////*/
+.tarjeta5 {
+    width: 90%; 
+    height: 200px; 
+    background-image: url('esencia_ima/de_cinco.png'); 
+    background-size: cover; 
+    background-position: center; 
+    border-radius: 10px;
+    overflow: hidden; 
+    position: relative; 
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.contenido5 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    text-align: center; 
+    color: white; 
+    text-decoration: none; 
+    font-size: 24px; 
+}
+ 
+.contenido5 h3:hover {
+     color: #150C21;
+}
+
+
