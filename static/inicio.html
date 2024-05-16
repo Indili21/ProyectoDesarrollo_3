@@ -1,176 +1,249 @@
+<!--#969DCB,#EFD0D6,#FBEDE5,#150C21 --> 
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>INICIO</title>
     <link rel="stylesheet" href="Bootstrap/css/bootstrap.min.css" />
     <link rel="stylesheet" href="INICIO.css" />
+    <link rel="stylesheet" href="css_general.css" />
     <link
       href="/node_modules/bootstrap-icons/font/bootstrap-icons.css"
       rel="stylesheet"
     />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css"
-      rel="stylesheet"
-    />
-  </head>
+      rel="stylesheet"/>
+      <link rel="stylesheet" href="inicio.css">
+      <style>
+        body {
+          overflow-x: hidden;
+        };
+        </style>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Display:ital,wght@0,100..900;1,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=PT+Serif+Caption:ital@0;1&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap" rel="stylesheet">
+      </head>
+
+  <!---------------------------BARRA NAVEGACION--------------------------->
+<!--línea de la imagen-->
   <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Hoe</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Dropdown
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><hr class="dropdown-divider" /></li>
-                <li>
-                  <a class="dropdown-item" href="#">Something else here</a>
-                </li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-            </li>
-          </ul>
-          <form class="d-flex" role="search">
-            <input
-              class="form-control me-2"
-              type="search"
-              placeholder="Search"
-              aria-label="Search"
-            />
-            <button class="btn btn-outline-success" type="submit">
-              Search
-            </button>
-          </form>
-        </div>
+ <div style="background: linear-gradient(75deg, #EFD0D6, #969DCB, #EFD0D6 );">
+  <div class="row justify-content-center align-items-center">
+    <div class="col-md-3 text-center">
+      <a href="inicio.html">
+        <img src="esencia_ima/Esencia -08.png" alt="" width="170 " >
+      </a>
+    </div>
+  </div>
+</div>
+
+<!--línea de links-->
+<nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #27094d;">
+  <div class="container">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button  class="btn btn-outline-light">
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav w-100" style="display: grid; grid-template-columns: repeat(5, 1fr); gap: 1rem;">
+       <div class="lin">
+        <li id="lin" class="nav-item">
+          <a class="nav-link" href="#" style="color: white;">Inicio</a>
+        </li>
       </div>
-    </nav>
-    <h2>Hola mundo</h2>
-    <i class="bi bi-apple"></i>
-    <div class="card">
-      <div class="card-body">
-        This is some text within a card body.
+        <li class="nav-item" >
+          <a class="nav-link" href="#" style="color: white;">Nosotros</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" style="color: white;">Blogs</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" style="color: white;">Venta</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="btn btn-outline-light">Contáctenos</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+  <!---------------------------FINAL BARRA NAVEGACION--------------------------->
+
+  <!---------------------------INICIO DE PAGINA--------------------------------->
+<div class="inicio">
+  <div class="txtinicio">
+    <h1 class="inicioh1">EL MEJOR LUGAR</h1>
+    <h5 class="inicioh5"> PARA CREAR RECUERDOS INOLVIDABLES </h5>
+  <p>En Esencia, creemos que cada evento es una oportunidad única para crear recuerdos inolvidables. </p>
+  <button class="btn1">
+    <svg height="24" width="24" fill="#FFFFFF" viewBox="0 0 24 24" data-name="Layer 1" id="Layer_1" class="sparkle">
+        <path d="M10,21.236,6.755,14.745.264,11.5,6.755,8.255,10,1.764l3.245,6.491L19.736,11.5l-6.491,3.245ZM18,21l1.5,3L21,21l3-1.5L21,18l-1.5-3L18,18l-3,1.5ZM19.333,4.667,20.5,7l1.167-2.333L24,3.5,21.667,2.333,20.5,0,19.333,2.333,17,3.5Z"></path>
+    </svg>
+
+    <span class="text">CREAR</span>
+</button>
+  
+  
+</div>
+</div>
+
+<div class="grad">
+  <div class="inf">
+    <h3>CARACTERÍSTICAS</h3>
+  </div>
+
+  <div class="proceso">
+ 
+    <div class="pros">
+      <div class="card">
+      <div> <img  class="card-image" src="esencia_ima/objetivo.png" ></div>
+      <div class="heading"> PERSONALIZACIÓN </div>
+      <div class="category"> Eventos unicos, adaptados a tus gustos y preferencias.
       </div>
     </div>
-    <i class="bi bi-search"></i>
-    <i class="bi bi-0-circle"></i>
-    <div id="carouselExampleCaptions" class="carousel slide">
-      <div class="carousel-indicators">
-        <button
-          type="button"
-          data-bs-target="#carouselExampleCaptions"
-          data-bs-slide-to="0"
-          class="active"
-          aria-current="true"
-          aria-label="Slide 1"
-        ></button>
-        <button
-          type="button"
-          data-bs-target="#carouselExampleCaptions"
-          data-bs-slide-to="1"
-          aria-label="Slide 2"
-        ></button>
-        <div class="l">
-        <button
-          type="button"
-          data-bs-target="#carouselExampleCaptions"
-          data-bs-slide-to="2"
-          aria-label="Slide 3"
-        ></button>
+  </div>
+
+    <div class="pros2"></div>
+
+    <div class="pros"><div class="card">
+      <div> <img  class="card-image" src="esencia_ima/profesionalismo.png" ></div>
+      <div class="heading"> PROFESIONALISMO </div>
+      <div class="category"> Servicio de alta calidad y excelencia en cada detalle.
       </div>
-      </div>
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="descarga (1).jpeg" class="d-block w-100" alt="..." />
-          <div class="carousel-caption d-none d-md-block">
-            <h5>First slide label</h5>
-            <p>Some representative placeholder content for the first slide.</p>
-          </div>
+  </div></div>
+    
+  <div class="pros2"></div>
+
+    <div class="pros"><div class="card">
+      <div> <img  class="card-image" src="esencia_ima/lluvia-de-ideas.png" ></div>
+      <div class="heading"> CREATIVIDAD </div>
+      <div class="category"> transformamos tus ideas en realidades innovadoras </div>
+  </div></div>
+ 
+  </div>
+
+
+
+
+
+
+
+
+<!--Font Awesome CDN-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     
+<div class="container3">
+
+    <div class="slide">
+
+        
+        <div class="item" style="background-image: url(https://cdn0.bodas.com.mx/article-real-wedding/155/3_2/1280/jpg/1395171.jpeg);">
+            <div class="content">
+                <div class="name">Switzerland</div>
+                <div class="des">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, eum!</div>
+                <button>See More</button>
+            </div>
         </div>
-        <div class="carousel-item">
-          <img src="descarga (2).jpeg" class="d-block w-100" alt="..." />
-          <div class="carousel-caption d-none d-md-block">
-            <h5>Second slide label</h5>
-            <p>Some representative placeholder content for the second slide.</p>
-          </div>
+        <div class="item" style="background-image: url(https://www.toulouselautrec.edu.pe/sites/default/files/imagenes/cursos/toulouse-cursos-org-eventos-desktop-37.jpg);">
+            <div class="content">
+                <div class="name">Finland</div>
+                <div class="des">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, eum!</div>
+                <button>See More</button>
+            </div>
         </div>
-        <div class="carousel-item">
-          <img src="descarga (1).jpeg" class="d-block w-100" alt="..." />
-          <div class="carousel-caption d-none d-md-block">
-            <h5>Third slide label</h5>
-            <p>Some representative placeholder content for the third slide.</p>
-          </div>
+        <div class="item" style="background-image: url(https://elolivar.es/olivar-content/uploads/2021/06/salones-para-eventos.png);">
+            <div class="content">
+                <div class="name">Iceland</div>
+                <div class="des">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, eum!</div>
+                <button>See More</button>
+            </div>
         </div>
-      </div>
-      <div class="dropdown">
-        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-          Dropdown button
-        </button>
-        <ul class="dropdown-menu">
-          <li><a class="dropdown-item" href="#">Action</a></li>
-          <li><a class="dropdown-item" href="#">Another action</a></li>
-          <li><a class="dropdown-item" href="#">Something else here</a></li>
+        <div class="item" style="background-image: url(https://s.ineventos.com/ogimg/decoracion-infantil.jpg);">
+            <div class="content">
+                <div class="name">Australia</div>
+                <div class="des">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, eum!</div>
+                <button>See More</button>
+            </div>
+        </div>
+        <div class="item" style="background-image: url(https://www.hotellosrobles.com/wp-content/uploads/decoracion-de-eventos-especiales-en-managua-1024x576.jpg);">
+            <div class="content">
+                <div class="name">Netherland</div>
+                <div class="des">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, eum!</div>
+                <button>See More</button>
+            </div>
+        </div>
+        <div class="item" style="background-image: url(https://organizar-eventos.com/wp-content/uploads/2021/03/evento-bodas-organizar.jpg);">
+            <div class="content">
+                <div class="name">Ireland</div>
+                <div class="des">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, eum!</div>
+                <button>See More</button>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="buttontarjetas">
+        <button class="prev"><i class="fa-solid fa-arrow-left"></i></button>
+        <button class="next"><i class="fa-solid fa-arrow-right"></i></button>
+    </div>
+
+</div>
+
+
+
+<div class="inf2">
+  <h1>hola</h1>
+</div>
+</div>
+
+
+
+<footer class="footer">
+  <div class="container2">
+    <div class="row">
+      <div class="footer-col">
+        <h4>company</h4>
+        <ul>
+          <li><a href="#">about us</a></li>
+          <li><a href="#">our services</a></li>
+          <li><a href="#">privacy policy</a></li>
+          <li><a href="#">affiliate program</a></li>
         </ul>
       </div>
-      <button
-        class="carousel-control-prev"
-        type="button"
-        data-bs-target="#carouselExampleCaptions"
-        data-bs-slide="prev"
-      >
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button
-        class="carousel-control-next"
-        type="button"
-        data-bs-target="#carouselExampleCaptions"
-        data-bs-slide="next"
-      >
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-    </div>
-
-    <div class="card" style="width: 18rem;">
-      <img src="descarga (1).jpeg" class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
+      <div class="footer-col">
+        <h4>get help</h4>
+        <ul>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">shipping</a></li>
+          <li><a href="#">returns</a></li>
+          <li><a href="#">order status</a></li>
+          <li><a href="#">payment options</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>online shop</h4>
+        <ul>
+          <li><a href="#">watch</a></li>
+          <li><a href="#">bag</a></li>
+          <li><a href="#">shoes</a></li>
+          <li><a href="#">dress</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>follow us</h4>
+        <div class="social-links">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        </div>
       </div>
     </div>
+  </div>
+</footer>
 
     <script src="Bootstrap/js/bootstrap.min.js"></script>
+    <script src="scrip.js"></script>
   </body>
 </html>

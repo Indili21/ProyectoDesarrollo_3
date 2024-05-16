@@ -1,0 +1,10 @@
+@font-face {
+    font-family: 'FuenteTitulo';
+    src: url('fuentes/beautyrachela-regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+.inicioh2{
+font-weight: 500;
+
+}
