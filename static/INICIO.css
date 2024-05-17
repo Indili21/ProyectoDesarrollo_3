@@ -114,11 +114,11 @@ img{
   .inf2{
     width: 800px;
     height: 100px;
-  
+
     margin: 0 auto;
     justify-content: center;
     text-align: left;
-    margin-top: 100px;
+  
 
 }
 
@@ -242,6 +242,7 @@ img{
     width: 1000px;
     height: 600px;
     background-color: #331a52;
+    margin-bottom: -100px;
  
 }
 
@@ -259,6 +260,31 @@ img{
     transition: 0.5s;
    
 }
+
+
+.container3 .slide .item .content {
+  
+    background-color: rgba(24, 11, 26, 0.7); /* Fondo negro con opacidad */
+
+    transition: opacity 0.5s;
+    width: 350px;
+    height: auto;
+    padding: 10px;
+  
+}
+
+.container3 .slide .item .content .name,.des {
+  padding: 10px;
+  text-align: left;
+   
+}
+.container3 .slide .item .content .name {
+  font-size:25px ;
+}
+.container3 .slide .item .content .des {
+  font-size:14px ;
+}
+
 .slide{
   border-radius: 10px;
 }
@@ -328,12 +354,27 @@ img{
 }
 
 .content button{
-    padding: 10px 20px;
-    border: none;
+    padding: 7px 15px;
+    border: 1px solid white;
+    border-radius: 5px;
     cursor: pointer;
     opacity: 0;
     animation: animate 1s ease-in-out 0.6s 1 forwards;
+ margin-left: 200px;
+ background: none;
+ color: #ffffff;
+ 
 }
+
+.content button:hover{
+background: linear-gradient(135deg,#754a99, #c88aec, #db8196  );
+color: #ffffff;
+border-radius: 8px;
+border: 1px solid white;
+font-weight: 500;
+transition: 1s ease;
+}
+
 
 
 @keyframes animate {
@@ -369,13 +410,79 @@ img{
     cursor: pointer;
     margin: 0 5px;
     border: 1px solid #000;
-    transition: 0.3s;
+    transition: background-color 0.3s;
 }
 
 .buttontarjetas button:hover{
     background: #ababab;
-    color: #fff;
+    color: #1d1b1b;
 }
+
+
+
+
+
+
+.content_bene {
+  margin-top: 50px;
+  display: flex;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+  font-size: 12px;
+  margin-bottom: 100px;
+}
+.cont_bene {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px; /* Adjust the gap between the benefit boxes */
+  flex: 1;
+ margin: 0;
+}
+
+.imag{
+ margin: 0 auto;
+ width:300px;
+ margin-bottom: -130px;
+}
+.benefit {
+  background-color: #ffffff;
+
+  border-radius: 8px;
+  padding: 8px; /* Reduced padding */
+
+  text-align: left;
+ width: 200px;
+ height: 150px;
+
+}
+.benefit img {
+  width: 50px; /* Smaller image */
+  height: 50px; /* Smaller image */
+
+}
+.benefit h3 {
+  color: #2c3e50;
+  margin-bottom: 10px;
+  font-size: 1.3em; /* Smaller font size */
+}
+.benefit p {
+  color: #7f8c8d;
+  font-size: 0.9em; /* Smaller font size */
+  text-align: justify;
+}
+.side-image {
+  margin-left: 20px;
+  flex-shrink: 0;
+}
+.side-image img {
+  max-width: 400px; /* Smaller side image */
+  border-radius: 8px;
+
+}
+
+
+
 
 
 
@@ -394,7 +501,7 @@ ul{
 .footer{
 	background-color: #2b0a38;
     padding: 70px 0;
-    margin-top: 1200px;
+  
 }
 .footer-col{
    width: 25%;
