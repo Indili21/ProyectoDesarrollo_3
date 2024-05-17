@@ -1,0 +1,245 @@
+/* Reglas globales */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+
+}
+
+body {
+  background-color: rgb(19, 31, 36);
+  backdrop-filter: blur(20px);
+  font-family: "Roboto", sans-serif;
+}
+.box-envolutura
+{
+  transform: scale(.9);
+}
+
+.info-titulo {
+  font-size: clamp(1.2rem, 0.8rem + 3vw, 2rem);
+  font-weight: 700;
+  letter-spacing: 2px;
+  line-height: 26px;
+  color: white;
+  margin-top: 17px;
+}
+
+.form-titulo {
+  margin-top: 17px;
+  color: #272c2a;
+}
+
+/* Estructuras principales */
+.section-envoltura {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 20px;
+}
+
+.info-sub-titulo {
+  font-family: "Courier New", Courier, monospace;
+  font-size: clamp(0.5rem, 0.3rem + 3vw, 1rem);
+  font-weight: 500;
+  color: white;
+  letter-spacing: 0.5px;
+  line-height: 20px;
+  margin-top: 17px;
+}
+
+.box-envolutura {
+  width: 90%;
+  display: inline-flex;
+  margin: auto;
+}
+
+.box-envolutura > .info-envoltura {
+  
+  /* background-image: linear-gradient(144deg, #729dc8 0, #866199 59%); */
+  background-color:#150C21 ;
+
+  width: 35%;
+  border-top-left-radius: 30px;
+  border-end-start-radius: 30px;
+  padding: 30px;
+}
+
+.info-detalles {
+  margin-top: 40px;
+  list-style-type: none;
+}
+
+.info-detalles li {
+  margin-top: 25px;
+  font-size: clamp(0.7rem, 0.4rem + 1vw, 1.4rem);
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+.info-detalles li a {
+  color: white;
+}
+
+.info-detalles li .material-symbols-outlined {
+  padding: 12px;
+  border-radius: 50%;
+}
+
+.material-symbols-outlined {
+  padding: 2px;
+  background-color: #969DCB;
+  margin-right: 10px;
+  transition: all 500ms linear;
+}
+
+
+.social-icons li .fa-facebook:hover {
+  text-shadow: 0px 0px 15px #365998;
+  color:#365998;
+  border-color:#365998;
+}
+.social-icons li:hover .fa-instagram
+{ text-shadow: 0px 0px 15px #bc2a8d;
+  color:#bc2a8d;
+  border-color:#bc2a8d;
+  
+
+}
+.social-icons li:hover .fa-whatsapp
+{
+  text-shadow: 0px 0px 15px #4dc247;
+  color:#4dc247;
+  border-color:#4dc247;
+}
+
+.box-envolutura > .form-envoltura {
+  background: #ecf0f3;
+}
+
+.form-envoltura {
+  background: #ecf0f3;
+  width: 65%;
+  padding: 30px;
+  border-bottom-right-radius: 30px;
+  border-top-right-radius: 30px;
+}
+
+.social-icons {
+  display: flex;
+  margin-top: 50px;
+  list-style-type: none;
+  justify-content: center;
+}
+
+.social-icons li i {
+ 
+  font-size: 24px;
+  height: 60px;
+  width: 60px;
+  padding: 15px;
+  border:  5PX solid   #ecf0f3;
+  border-radius: 50%;
+  color: #ecf0f3;
+  transition: all 500ms linear;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.social-icons li:nth-child(3) {
+  margin-left: 10px;
+}
+.social-icons li:nth-child(1) {
+  margin-left: 0px;
+  margin-right: 10px;
+}
+
+.form-campos {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.form-campos .form-group {
+  flex-basis: 48%;
+  margin-top: 30px;
+}
+
+.botton-enviar {
+  width: 100%;
+  margin: auto;
+  display: block;
+  height: 60px;
+  border-radius: 30px;
+  outline: none;
+  border: 0;
+  background-color:  #969DCB;
+  margin-top: 24px;
+  color: white;
+  font-size: 20px;
+  font-weight: 700;
+  transition: all 500ms linear;
+}
+
+.botton-enviar:hover {
+  background-color: #150C21;
+}
+
+.form-group:nth-child(5) {
+  flex-basis: 100%;
+}
+
+.form-group > input,
+.form-group > textarea {
+  width: 100%;
+  padding: 20px 20px 20px 30px;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  box-shadow: inset 8px 8px 8px #cbced1, inset -8px -8px 8px #ffffff;
+  background: #ecf0f3;
+  text-align: start;
+  font-size: 18px;
+  color: #555;
+}
+
+.form-group > textarea {
+  height: 150px;
+  resize: none;
+}
+
+@media only screen and (max-width: 850px) {
+  .box-envolutura {
+    flex-direction: column;
+  }
+  .box-envolutura {
+    width: 100%;
+  }
+  .box-envolutura > .info-envoltura {
+    width: 100%;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-end-start-radius: 0;
+  }
+  .box-envolutura > .form-envoltura {
+    width: 100%;
+    border-end-end-radius: 30px;
+    border-end-start-radius: 30px;
+    border-top-right-radius: 0px;
+  }
+  .form-campos {
+    flex-direction: column;
+  }
+  .material-symbols-outlined {
+    margin-right: 8px;
+  }
+  .form-titulo {
+    text-align: center;
+  }
+}
