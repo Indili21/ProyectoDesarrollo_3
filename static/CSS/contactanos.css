@@ -29,7 +29,7 @@ h2 {
 .tarjeta1 {
     width: 90%; /* Tamaño fijo de la tarjeta */
     height: 200px; /* Tamaño fijo de la tarjeta */
-    background-image: url('esencia_ima/de_uno.png'); /* Ruta de la imagen de fondo */
+    background-image: url('../esencia_ima/de_uno.png'); /* Ruta de la imagen de fondo */
     background-size: cover; /* Ajusta el tamaño de la imagen para cubrir la tarjeta */
     background-position: center; /* Centra la imagen de fondo */
     border-radius: 10px; /* Borde redondeado */
@@ -67,7 +67,7 @@ h2 {
 .tarjeta2 {
     width: 90%; /* Tamaño fijo de la tarjeta */
     height: 200px; /* Tamaño fijo de la tarjeta */
-    background-image: url('esencia_ima/de_dos.png'); /* Ruta de la imagen de fondo */
+    background-image: url('../esencia_ima/de_dos.png'); /* Ruta de la imagen de fondo */
     background-size: cover; /* Ajusta el tamaño de la imagen para cubrir la tarjeta */
     background-position: center; /* Centra la imagen de fondo */
     border-radius: 10px; /* Borde redondeado */
@@ -99,7 +99,7 @@ h2 {
 .tarjeta3 {
     width: 90%; 
     height: 200px; 
-    background-image: url('esencia_ima/de_tres.png'); 
+    background-image: url('../esencia_ima/de_tres.png'); 
     background-size: cover; 
     background-position: center; 
     border-radius: 10px;
@@ -131,7 +131,7 @@ h2 {
 .tarjeta4 {
     width: 90%; 
     height: 200px; 
-    background-image: url('esencia_ima/de_cuatro.png'); 
+    background-image: url('../esencia_ima/de_cuatro.png'); 
     background-size: cover; 
     background-position: center; 
     border-radius: 10px;
@@ -163,7 +163,7 @@ h2 {
 .tarjeta5 {
     width: 90%; 
     height: 200px; 
-    background-image: url('esencia_ima/de_cinco.png'); 
+    background-image: url('../esencia_ima/de_cinco.png'); 
     background-size: cover; 
     background-position: center; 
     border-radius: 10px;
