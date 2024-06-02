@@ -1,0 +1,97 @@
+<!---------------------------ENLACES--------------------------------->
+<title>Registrate</title>
+<link rel="stylesheet" href="../CSS/form.css" />  <!-- Enlace CSS -->
+
+<%- include('partials/htmlhead'); -%> <!-- Enlace plantilla del head -->
+
+
+<!---------------------------FIN ENLACES--------------------------------->
+
+
+<body>
+
+    
+    <section class="section-envoltura">
+      <div class="box-envolutura">
+        <div class="info-envoltura">
+          <h2 class="info-titulo">Información de contacto</h2>
+        
+          <h3 class="info-sub-titulo">
+            Rellene el formulario y nuestro equipo se pondrá en contacto con
+            usted en un plazo de 24 horas
+          </h3>
+          <ul class="info-detalles"">
+            <li>
+              <span class="material-symbols-outlined"> call </span>
+              <span>Phone:</span>
+              <a href="tel:+ 1235 2355 98"> 85-2-22</a>
+            </li>
+            <li>
+              <span class="material-symbols-outlined"> mail </span>
+              <span>Email:</span>
+              <a href="mailto:info@yoursite.com"> events@mail</a>
+            </li>
+            <li>
+              <span class="material-symbols-outlined"> language </span>
+              <span>Website:</span> <a href="#">events.com</a>
+            </li>
+          </ul>
+          <ul class="social-icons" style="padding: 0;">
+            <li>
+              <i class="fa fa-whatsapp" aria-hidden="true"></i>
+            </li>
+            <li>
+              <i class="fa fa-instagram" aria-hidden="true"></i>
+            </li>
+            <li>
+              <i class="fa fa-facebook" aria-hidden="true" ></i>
+            </li>
+          </ul>
+        </div>
+        <div class="form-envoltura">
+          <form action="#" method="POST">
+            <h2 class="form-titulo">Envianos un mensaje</h2>
+            <div class="form-campos">
+              <div class="form-group">
+                <input type="text" class="fname" placeholder="Nombre" />
+              </div>
+              <div class="form-group">
+                <input
+                  type="text"
+                  class="lname"
+                  placeholder="Apellido"
+                  name="name"
+                />
+              </div>
+              <div class="form-group">
+                <input
+                  type="email"
+                  class="email"
+                  placeholder="Mail"
+                  name="email"
+                />
+              </div>
+              <div class="form-group">
+                <input
+                  type="number"
+                  class="phone"
+                  placeholder="Telefono"
+                  name="phone"
+                />
+              </div>
+              <div class="form-group">
+                <textarea
+                  name="message"
+                  id=""
+                  placeholder="Escribe tu mensaje"
+                ></textarea>
+              </div>
+            </div>
+            <input type="submit" value="Enviar message" class="botton-enviar" />
+          </form>
+        </div>
+      </div>
+    </section>
+
+
+<%- include('partials/htmlfooter'); -%> <!-- Enlace plantilla del Footer -->

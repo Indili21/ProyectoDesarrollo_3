@@ -1,0 +1,124 @@
+<!---------------------------ENLACES--------------------------------->
+<title>Servicios de Esencia</title>
+<link rel="stylesheet" href="../CSS/servicios.css"/> <!-- Enlace CSS -->
+ 
+ <%- include('partials/htmlhead'); -%> <!-- Enlace plantilla del head -->
+ 
+ 
+ <!---------------------------FIN ENLACES--------------------------------->
+ 
+ <body>
+ <!---------------------------SERVICIOS--------------------------->
+
+ <section class="servicios">
+    <div class="servicio">
+      <img src="https://cdn0.bodas.com.mx/article-real-wedding/155/3_2/1280/jpg/1395171.jpeg" alt="Servicio 1">
+      <div class="contenido">
+            <h3>Bodas y Ceremonias</h3>
+            <p>Desde bodas íntimas hasta grandes ceremonias, ofrecemos servicios personalizados que hacen realidad el día más especial de tu vida.</p>
+            <a href="#" class="boton">Más información</a>
+        </div>
+    </div>
+    
+    <div class="servicio">
+      <img src="https://cdn0.bodas.com.mx/article-real-wedding/155/3_2/1280/jpg/1395171.jpeg" alt="Servicio 1">
+        <div class="contenido">
+            <h3>Eventos Corporativos</h3>
+            <p>Conferencias, lanzamientos de productos, cenas de gala y más. Nuestro equipo se encarga de cada detalle para que tu evento corporativo sea profesional y exitoso.</p>
+            <a href="#" class="boton">Más información</a>
+        </div>
+    </div>
+    
+    <div class="servicio">
+      <img src="https://cdn0.bodas.com.mx/article-real-wedding/155/3_2/1280/jpg/1395171.jpeg" alt="Servicio 1">
+        <div class="contenido">
+            <h3>Fiestas Temáticas</h3>
+            <p>Desde fiestas de cumpleaños hasta eventos de temporada, diseñamos experiencias únicas que dejarán una impresión duradera en tus invitados.</p>
+            <a href="#" class="boton">Más información</a>
+        </div>
+    </div>
+
+    <div class="servicio">
+      <img src="https://cdn0.bodas.com.mx/article-real-wedding/155/3_2/1280/jpg/1395171.jpeg" alt="Servicio 1">
+        <div class="contenido">
+            <h3>Celebraciones Sociales</h3>
+            <p>Incluyendo aniversarios, graduaciones y reuniones familiares. Cada evento social es una oportunidad para crear recuerdos inolvidables.</p>
+            <a href="#" class="boton">Más información</a>
+        </div>
+    </div>
+
+    <div class="servicio">
+      <img src="https://cdn0.bodas.com.mx/article-real-wedding/155/3_2/1280/jpg/1395171.jpeg" alt="Servicio 1">
+        <div class="contenido">
+            <h3>Eventos Culturales y Artísticos</h3>
+            <p>Organización de eventos que celebran la cultura, el arte y la creatividad, desde exposiciones hasta festivales y conciertos.</p>
+            <a href="#" class="boton">Más información</a>
+        </div>
+    </div>
+
+    <div class="servicio">
+      <img src="https://cdn0.bodas.com.mx/article-real-wedding/155/3_2/1280/jpg/1395171.jpeg" alt="Servicio 1">
+        <div class="contenido">
+            <h3>Eventos Benéficos y Fundraising</h3>
+            <p>Ayudamos a organizaciones sin fines de lucro a planificar eventos para recaudar fondos de manera efectiva y significativa.</p>
+            <a href="#" class="boton">Más información</a>
+        </div>
+    </div>
+</section>
+<!---------------------------FIN SERVICIOS--------------------------->
+
+
+<!---------------------------TESTIMONIO--------------------------->
+<section class="testimonios">
+    <div class="testimonio">
+        <img src="../esencia_ima/cliente1.jpg" alt="Cliente 1">
+        <blockquote>"Esencia realmente superó nuestras expectativas. El equipo hizo un trabajo increíble en nuestra boda, ¡no podríamos haber pedido más!"</blockquote>
+        <cite>- Juan y María</cite>
+    </div>
+
+    <div class="testimonio">
+        <img src="../esencia_ima/pareja.jpeg" alt="Cliente 2">
+        <blockquote>"Gracias a Esencia, nuestro evento corporativo fue un éxito total. Profesionalismo, creatividad y atención al detalle en cada aspecto."</blockquote>
+        <cite>- Carlos Gómez, CEO</cite>
+    </div>
+</section>
+
+<section class="cotizacion">
+    <div class="cotizacion-container">
+        <h2>Solicita una cotización</h2>
+        <form action="#" method="POST">
+            <div class="campo">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+            </div>
+            <div class="campo">
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="campo">
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono">
+            </div>
+            <div class="campo">
+                <label for="servicio">Tipo de evento:</label>
+                <select id="servicio" name="servicio" required>
+                    <option value="">Selecciona el tipo de evento</option>
+                    <option value="Bodas">Bodas</option>
+                    <option value="Eventos corporativos">Eventos corporativos</option>
+                    <option value="Fiestas temáticas">Fiestas temáticas</option>
+                    <option value="Otro">Otro</option>
+                </select>
+            </div>
+            <div class="campo">
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+            </div>
+            <button type="submit" class="boton">Enviar solicitud</button>
+        </form>
+    </div>
+</section> 
+</body>
+
+<!---------------------------TESTIMONIO--------------------------->
+
+<%- include('partials/htmlfooter'); -%> <!-- Enlace plantilla del Footer -->
