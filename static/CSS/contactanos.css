@@ -76,7 +76,7 @@ img{
 .tarjeta1 {
     width: 90%; /* Tamaño fijo de la tarjeta */
     height: 200px; /* Tamaño fijo de la tarjeta */
-    background-image: url('../esencia_ima/de_uno.png'); /* Ruta de la imagen de fondo */
+    background-image: url('../IMG/de_uno.png'); /* Ruta de la imagen de fondo */
     background-size: cover; /* Ajusta el tamaño de la imagen para cubrir la tarjeta */
     background-position: center; /* Centra la imagen de fondo */
     border-radius: 10px; /* Borde redondeado */
@@ -84,8 +84,7 @@ img{
     position: relative; /* Necesario para posicionar el contenido de manera absoluta */
     margin: 0 auto; /*centrado*/
     margin-top: 100px;/* Agrega un margen superior */
-   text-decoration: ;
-   
+     
 }
 
 .tarjeta1 a {
@@ -122,7 +121,7 @@ img{
 .tarjeta2 {
     width: 90%; /* Tamaño fijo de la tarjeta */
     height: 200px; /* Tamaño fijo de la tarjeta */
-    background-image: url('../esencia_ima/de_dos.png'); /* Ruta de la imagen de fondo */
+    background-image: url('../IMG/de_dos.png'); /* Ruta de la imagen de fondo */
     background-size: cover; /* Ajusta el tamaño de la imagen para cubrir la tarjeta */
     background-position: center; /* Centra la imagen de fondo */
     border-radius: 10px; /* Borde redondeado */
@@ -154,7 +153,7 @@ img{
 .tarjeta3 {
     width: 90%; 
     height: 200px; 
-    background-image: url('../esencia_ima/de_tres.png'); 
+    background-image: url('../IMG/de_tres.png'); 
     background-size: cover; 
     background-position: center; 
     border-radius: 10px;
@@ -186,7 +185,7 @@ img{
 .tarjeta4 {
     width: 90%; 
     height: 200px; 
-    background-image: url('../esencia_ima/de_cuatro.png'); 
+    background-image: url('../IMG/de_cuatro.png'); 
     background-size: cover; 
     background-position: center; 
     border-radius: 10px;
@@ -218,7 +217,7 @@ img{
 .tarjeta5 {
     width: 90%; 
     height: 200px; 
-    background-image: url('../esencia_ima/de_cinco.png'); 
+    background-image: url('../IMG/de_cinco.png'); 
     background-size: cover; 
     background-position: center; 
     border-radius: 10px;

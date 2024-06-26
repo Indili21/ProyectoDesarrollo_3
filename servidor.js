@@ -31,87 +31,68 @@ app.get('/form.html', (req, res) => {
 });
 */
 
-// Express application
 import express from 'express';
 import { fileURLToPath } from 'url';
-import { dirname, sep } from 'path';
+import { dirname, join } from 'path';
 
-const __dirname = dirname(fileURLToPath( import.meta.url )) +
-	sep;
+// Obtener el nombre del directorio actual
+const __dirname = dirname(fileURLToPath(import.meta.url));
 
+// Configuración
+const cfg = {
+  port: process.env.PORT || 3000,
+  dir: {
+    root: __dirname,
+    static: join(__dirname, 'static'),
+    views: join(__dirname, 'views')
+  }
+};
 
-
-
-// configuration
-const	cfg = {
-		port: process.env.PORT || 3000,
-		dir: {
-			root: __dirname,
-			static: __dirname + 'static' + sep,
-			views: __dirname + 'views' + sep
-		}
-	};
 console.dir(cfg, { depth: null, color: true });
 
-
-// Express initiation
+// Iniciación de Express
 const app = express();
-//----------------------------------------------------------
+
+// Configurar el motor de vistas a EJS y especificar el directorio de vistas
 app.set('view engine', 'ejs');
 app.set('views', cfg.dir.views);
 
+// Servir archivos estáticos desde el directorio estático
+app.use(express.static(cfg.dir.static));
 
-
-
-
-
-// RUTAS A PÁGINAS
+// Rutas
 app.get('/', (req, res) => {
-	res.render('inicio');
+  res.render('inicio');
 });
 
-app.get('/inicio.ejs/', (req, res) => {
-	res.render('inicio');
+app.get('/inicio.ejs', (req, res) => {
+  res.render('inicio');
 });
-app.get('/nosotros.ejs/', (req, res) => {
-	res.render('nosotros');
+app.get('/nosotros.ejs', (req, res) => {
+  res.render('nosotros');
 });
-app.get('/servicios.ejs/', (req, res) => {
-	res.render('servicios');
+app.get('/servicios.ejs', (req, res) => {
+  res.render('servicios');
 });
-app.get('/contactanos.ejs/', (req, res) => {
-	res.render('contactanos');
+app.get('/contactanos.ejs', (req, res) => {
+  res.render('contactanos');
 });
-
-app.get('/blogs.ejs/', (req, res) => {
-	res.render('blogs');
+app.get('/blogs.ejs', (req, res) => {
+  res.render('blogs');
 });
-
-app.get('/form.ejs/', (req, res) => {
-	res.render('form');
+app.get('/form.ejs', (req, res) => {
+  res.render('form');
 });
 
-
-
-// serve static assets
-app.use(express.static( cfg.dir.static ));
-
-// 404 errors
+// Manejar errores 404
 app.use((req, res) => {
-	res.status(404).render('404');
+  res.status(404).render('404');
 });
 
-
-
-
-
-// start server
+// Iniciar el servidor
 app.listen(cfg.port, () => {
-console.log(`Example app listening at http://localhost:${
-cfg.port }`);
+  console.log(`Aplicación de ejemplo escuchando en http://localhost:${cfg.port}`);
 });
-
-
 
 /*
 app.listen(port, () => {

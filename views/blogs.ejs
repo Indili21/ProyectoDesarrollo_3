@@ -1,99 +1,157 @@
 
 <!---------------------------ENLACES--------------------------------->
 <title>Blogs</title>
-
+<link rel="stylesheet" href="/CSS/blogs.css" />   <!-- Enlace CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
+integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" 
+crossorigin="anonymous" referrerpolicy="no-referrer"/> 
 <%- include('partials/htmlhead'); -%> <!-- Enlace plantilla del head -->
 
 
 <!---------------------------FIN ENLACES--------------------------------->
 <body>
     <!--aqui enpieza los blogs-->
-    
-    <div class="container mt-5">
-      <h1 class="text-center mb-5" style="color: #27094d;"> Blog</h1>
-      <div class="row row-cols-1 row-cols-md-2">
-        <div class="col mb-4">
-          <div class="card">
-            <img src="/static/esencia_ima/pexels-amar1.jpg" class="card-img-top" alt="Evento 1">
-            <div class="card-body">
-              <h5 class="card-title">Nuestro equipo de fotografia</h5>
-              <p class="card-text">En Esencia, nuestro equipo de fotografía está dedicado a capturar la esencia única de cada evento que diseñamos. Desde bodas íntimas hasta grandes celebraciones corporativas, nos comprometemos a inmortalizar momentos memorables con un enfoque artístico y profesional. Con un equipo apasionado y creativo, nos esforzamos por no solo documentar cada detalle visualmente impresionante, sino también por contar historias a través de nuestras imágenes. Nuestro objetivo es ofrecer a nuestros clientes recuerdos visuales que perduren para siempre, reflejando la belleza y la emoción de cada ocasión especial.</p>
-              <a href="#" class="btn btn-primary mb-3">Leer más</a>
-            </div>
+    <div class="contenedor">
+<section class="seccionIzq">
+
+  <div class="search-container">
+    <input type="text" placeholder="Buscar...">
+    <button><i class="fas fa-search"></i></button>
+</div>
+
+
+
+<section class="categorias">
+  <h3>Categorías</h3>
+  <div class="categoria" data-aos="fade-up">
+      <div class="icono"><i class="fas fa-calendar-alt"></i></div>
+      <h3>Planificación de Eventos</h3>
+      <p>Consejos y estrategias para una planificación eficaz de eventos.</p>
+  </div>
+
+  <div class="categoria" data-aos="fade-up" data-aos-delay="100">
+      <div class="icono"><i class="fas fa-camera"></i></div>
+      <h3>Fotografía de Eventos</h3>
+      <p>Técnicas y recomendaciones para capturar los mejores momentos de eventos.</p>
+  </div>
+
+  <div class="categoria" data-aos="fade-up" data-aos-delay="200">
+      <div class="icono"><i class="fas fa-balance-scale"></i></div>
+      <h3>Equilibrio de Presupuestos</h3>
+      <p>Manejo y optimización de presupuestos para eventos.</p>
+  </div>
+
+  <div class="categoria" data-aos="fade-up" data-aos-delay="300">
+      <div class="icono"><i class="fas fa-users"></i></div>
+      <h3>Gestión de Invitados</h3>
+      <p>Consejos para manejar listas de invitados y confirmaciones.</p>
+  </div>
+</section>
+
+
+<section class="top-posts">
+  <h2>Top de Posts Más Buscados</h2>
+  <ul id="post-list">
+      <!-- Aquí se insertarán dinámicamente los posts más buscados -->
+  </ul>
+</section>
+
+</section>
+
+
+
+
+  <section class="seccionDere">
+    <section class="blog-list">
+            <div class="container mt-5">
+              <h3 class="text-center mb-5" style="color: #27094d;">Blogs Relacionados con Organización de Eventos</h3>
+              <div class="row">
+                  <!-- Blog 1 -->
+                  <div class="col-md-6 mb-4">
+                      <div class="card">
+                          <img src="/IMG/pexels-amar1.jpg" class="card-img-top" alt="Evento 1">
+                          <div class="card-body">
+                              <h5 class="card-title">Nuestro equipo de fotografía</h5>
+                              <p class="card-text">En Esencia, nuestro equipo de fotografía está dedicado a capturar la esencia única de cada evento que diseñamos.</p>
+                              <p class="card-text"><small class="text-muted">Publicado el 10 de junio de 2024</small></p>
+                              <a href="#" class="btn btn-primary mb-3">Leer más</a>
+                          </div>
+                      </div>
+                  </div>
+          
+                  <!-- Blog 2 -->
+                  <div class="col-md-6 mb-4">
+                      <div class="card">
+                          <img src="/IMG/pexels-cottonbro2.jpg" class="card-img-top" alt="Evento 2">
+                          <div class="card-body">
+                              <h5 class="card-title">Reuniones con el equipo</h5>
+                              <p class="card-text">En Esencia, nuestras reuniones de equipo son el corazón de nuestra colaboración creativa y planificación meticulosa.</p>
+                              <p class="card-text"><small class="text-muted">Publicado el 8 de junio de 2024</small></p>
+                              <a href="#" class="btn btn-primary mb-3">Leer más</a>
+                          </div>
+                      </div>
+                  </div>
+          
+                  <!-- Blog 3 -->
+                  <div class="col-md-6 mb-4">
+                      <div class="card">
+                          <img src="/IMG/pexels-3.jpg" class="card-img-top" alt="Evento 3">
+                          <div class="card-body">
+                              <h5 class="card-title">Arreglo de mesas</h5>
+                              <p class="card-text">En Esencia, consideramos que el arreglo de mesas es más que una disposición física; es una expresión artística que transforma espacios y crea ambientes memorables para nuestros clientes.</p>
+                              <p class="card-text"><small class="text-muted">Publicado el 6 de junio de 2024</small></p>
+                              <a href="#" class="btn btn-primary mb-3">Leer más</a>
+                          </div>
+                      </div>
+                  </div>
+          
+                  <!-- Blog 4 -->
+                  <div class="col-md-6 mb-4">
+                      <div class="card">
+                          <img src="/IMG/pexels-amina-4.jpg" class="card-img-top" alt="Evento 4">
+                          <div class="card-body">
+                              <h5 class="card-title">Nuestra florista</h5>
+                              <p class="card-text">Nuestra florista en Esencia es el corazón floral de cada evento que diseñamos. Con una pasión innata por las flores y un ojo meticuloso para el diseño.</p>
+                              <p class="card-text"><small class="text-muted">Publicado el 4 de junio de 2024</small></p>
+                              <a href="#" class="btn btn-primary mb-3">Leer más</a>
+                          </div>
+                      </div>
+                  </div>
+          
+                  <!-- Blog 5 -->
+                  <div class="col-md-6 mb-4">
+                      <div class="card">
+                          <img src="/IMG/pexels-bohlemedia-5.jpg" class="card-img-top" alt="Evento 5">
+                          <div class="card-body">
+                              <h5 class="card-title">Sobre nuestras bajillas</h5>
+                              <p class="card-text">En Esencia, entendemos que la elección de vajilla, platos de vidrio y copas juega un papel crucial en la presentación y experiencia gastronómica de cualquier evento.</p>
+                              <p class="card-text"><small class="text-muted">Publicado el 2 de junio de 2024</small></p>
+                              <a href="#" class="btn btn-primary mb-3">Leer más</a>
+                          </div>
+                      </div>
+                  </div>
+          
+                  <!-- Blog 6 -->
+                  <div class="col-md-6 mb-4">
+                      <div class="card">
+                          <img src="/IMG/pexels-kokorevas-ingla6.jpg" class="card-img-top" alt="Evento 6">
+                          <div class="card-body">
+                              <h5 class="card-title">El viaje a Inglaterra para un arreglo</h5>
+                              <p class="card-text">El viaje a Inglaterra para el arreglo fue más que una simple expedición; fue una odisea de descubrimiento y creatividad.</p>
+                              <p class="card-text"><small class="text-muted">Publicado el 1 de junio de 2024</small></p>
+                              <a href="#" class="btn btn-primary mb-3">Leer más</a>
+                          </div>
+                      </div>
+                  </div>
+              </div>
           </div>
-        </div>
-        <div class="col mb-4">
-          <div class="card">
-            <img src="/static/esencia_ima/pexels-cottonbro2.jpg" class="card-img-top" alt="Evento 2">
-            <div class="card-body">
-              <h5 class="card-title">Reuniones con el equipo</h5>
-              <p class="card-text">En Esencia, nuestras reuniones de equipo son el corazón de nuestra colaboración creativa y planificación meticulosa. Nos reunimos regularmente para alinear visiones, compartir ideas innovadoras y coordinar estrategias que aseguren la excelencia en cada evento que diseñamos. Estas sesiones no solo fortalecen nuestro enfoque colectivo hacia la perfección y la satisfacción del cliente, sino que también fomentan un ambiente de apoyo y creatividad donde cada miembro del equipo aporta su experiencia única. Valoramos la colaboración y el intercambio de perspectivas, garantizando que cada reunión sea una oportunidad para crecer y mejorar continuamente nuestros servicios.</p>
-              <a href="#" class="btn btn-primary mb-3">Leer más</a>
-            </div>
-          </div>
-        </div>
-        <div class="col mb-4">
-          <div class="card">
-            <img src="/static/esencia_ima/pexels-3.jpg" class="card-img-top" alt="Evento 3">
-            <div class="card-body">
-              <h5 class="card-title">Arreglo de mesas</h5>
-              <p class="card-text">En Esencia, consideramos que el arreglo de mesas es más que una disposición física; es una expresión artística que transforma espacios y crea ambientes memorables para nuestros clientes. Cada detalle cuenta: desde la elección de la vajilla y la disposición de los centros de mesa hasta la iluminación y la disposición estratégica de los asientos. Nos dedicamos a diseñar arreglos de mesas que no solo sean estéticamente impresionantes, sino también funcionales y acogedores para cada ocasión. Nuestro enfoque meticuloso y creativo garantiza que cada evento tenga una atmósfera única y personalizada, adaptada a las preferencias y el estilo de nuestros clientes.</p>
-              <a href="#" class="btn btn-primary mb-3">Leer más</a>
-            </div>
-          </div>
-        </div>
-        <div class="col mb-4">
-          <div class="card">
-            <img src="/static/esencia_ima/pexels-amina-4.jpg" class="card-img-top" alt="Evento 4">
-            <div class="card-body">
-              <h5 class="card-title">Nuestra florista</h5>
-              <p class="card-text">Nuestra florista en Esencia es el corazón floral de cada evento que diseñamos. Con una pasión innata por las flores y un ojo meticuloso para el diseño, crea arreglos florales que son verdaderas obras de arte naturales. Desde elegantes ramos de novia hasta impresionantes centros de mesa y decoraciones florales para eventos, cada creación está cuidadosamente seleccionada y dispuesta para complementar perfectamente la temática y el ambiente del evento. Nuestra florista no solo domina el arte de las combinaciones florales, sino que también entiende la importancia de cada detalle para crear atmósferas memorables y experiencias sensoriales únicas para nuestros clientes.</p>
-              <a href="#" class="btn btn-primary mb-3">Leer más</a>
-            </div>
-          </div>
-        </div>
-        <div class="col mb-4">
-          <div class="card">
-            <img src="/static/esencia_ima/pexels-bohlemedia-5.jpg" class="card-img-top" alt="Evento 5">
-            <div class="card-body">
-              <h5 class="card-title">Sobre nuestras bajillas</h5>
-              <p class="card-text">En Esencia, entendemos que la elección de vajilla, platos de vidrio y copas juega un papel crucial en la presentación y experiencia gastronómica de cualquier evento. Nos enorgullece ofrecer una selección cuidadosamente curada de vajillas elegantes, platos de vidrio de calidad y copas refinadas que complementan perfectamente el diseño y la temática de cada ocasión. Desde bodas íntimas hasta grandes eventos corporativos, nuestras opciones de vajilla no solo son estéticamente atractivas, sino también funcionales y adecuadas para cualquier tipo de comida o bebida que se sirva. Nos esforzamos por asegurar que cada detalle, desde la elección del material hasta el diseño, contribuya a crear una experiencia gastronómica memorable y sofisticada para nuestros clientes.</p>
-              <a href="#" class="btn btn-primary mb-3">Leer más</a>
-            </div>
-          </div>
-        </div>
-        <div class="col mb-4">
-          <div class="card">
-            <img src="/static/esencia_ima/pexels-kokorevas-ingla6.jpg" class="card-img-top" alt="Evento 6">
-            <div class="card-body">
-              <h5 class="card-title">El biaje a inglaterra para una arreglo</h5>
-              <p class="card-text">El viaje a Inglaterra para el arreglo fue más que una simple expedición; fue una odisea de descubrimiento y creatividad. Nuestro equipo de Esencia se embarcó en esta travesía con la misión de encontrar inspiración en los paisajes pintorescos, la arquitectura histórica y la rica cultura del país. Desde paseos por los jardines botánicos de Londres hasta visitas a mercados locales llenos de flores exóticas, cada momento fue una oportunidad para absorber la esencia inglesa y transformarla en un arreglo que capturara la elegancia y el encanto característicos. Con cada flor cuidadosamente seleccionada y cada detalle meticulosamente planeado, nuestro viaje se convirtió en la piedra angular de un diseño que no solo adornaría un espacio, sino que también contaría una historia de belleza atemporal y creatividad sin límites.</p>
-              <a href="#" class="btn btn-primary mb-3">Leer más</a>
-            </div>
-          </div>
-        </div>
-        <div class="col mb-4">
-          <div class="card">
-            <img src="/static/esencia_ima/pexels-bilge-7.jpg" class="card-img-top" alt="Evento 7">
-            <div class="card-body">
-              <h5 class="card-title">La boda de nuestros amigos del trabajo</h5>
-              <p class="card-text">La boda de nuestros amigos del trabajo es un honor para nosotros en Esencia. Nos dedicamos a hacer realidad sus sueños y convertir su día especial en un evento verdaderamente inolvidable. Desde la primera consulta hasta el último baile, cuidamos cada detalle con atención meticulosa. Nuestro equipo se esfuerza por capturar la esencia única de su amor y celebrar su unión con elegancia y estilo. Con una planificación experta y un diseño meticuloso, creamos un ambiente que refleja su personalidad y visión, asegurándonos de que cada aspecto, desde la decoración hasta el menú y la música, esté perfectamente coordinado. Es un privilegio para nosotros ser parte de este momento tan significativo en la vida de nuestros amigos del trabajo, asegurando que su boda sea un día lleno de alegría, amor y recuerdos duraderos.</p>
-              <a href="#" class="btn btn-primary mb-3">Leer más</a>
-            </div>
-          </div>
-        </div>
-        <div class="col mb-4">
-          <div class="card">
-            <img src="/static/esencia_ima/pexels-kseniachernaya-8.jpg" class="card-img-top" alt="Evento 8">
-            <div class="card-body">
-              <h5 class="card-title">El almuerzo en el lago</h5>
-              <p class="card-text">El almuerzo en el lago fue una experiencia idílica y serena, donde la naturaleza y la gastronomía se unieron en perfecta armonía. En el tranquilo entorno del lago, rodeado de una vegetación exuberante y aguas serenas que reflejaban el cielo azul, nuestro equipo de Esencia creó un ambiente encantador y acogedor. Con mesas elegantemente dispuestas y una selección cuidadosa de platos frescos y deliciosos, cada bocado era un deleite para los sentidos. La frescura de los ingredientes locales y la atención al detalle en cada presentación hicieron de este almuerzo una experiencia gastronómica memorable. El sonido suave de las olas y la suave brisa completaban la escena, proporcionando el telón de fondo perfecto para una jornada inolvidable de disfrute y camaradería.</p>
-              <a href="#" class="btn btn-primary mb-3">Leer más</a>
-            </div>
-          </div>
-        </div>
-      </div>
+          </section>
+    </section>
+
     </div>
+
+
+     
        
 
   
@@ -101,6 +159,7 @@
           <!-- Font Awesome icons (for the social media icons) -->
      <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
     <script src="Bootstrap/js/bootstrap.min.js"></script>
+    <script src="/JS/scrip.js"></script>
   </body>
 
   <%- include('partials/htmlfooter'); -%> <!-- Enlace plantilla del Footer -->

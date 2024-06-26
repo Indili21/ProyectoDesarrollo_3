@@ -54,7 +54,7 @@ img{
   
         width: 1250px;
         height: 600px;
-        background-image: url('esencia_ima/INICIO.png'); /* Ruta de la imagen */
+        background-image: url('IMG/INICIO.png'); /* Ruta de la imagen */
         background-size: cover; /* Para que la imagen se ajuste al tamaño del contenedor */
         background-position: center; /* Para centrar la imagen */
         color: white; /* Color del texto */

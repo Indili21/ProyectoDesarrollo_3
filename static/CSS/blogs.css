@@ -1,0 +1,217 @@
+
+
+.contenedor {
+    display: flex;
+    max-width: 1200px;
+    margin: 20px auto;
+    background-color: transparent !important;
+}
+
+/* Estilo para la sección izquierda */
+.seccionDere {
+    flex: 1; /* La sección izquierda ocupa todo el espacio disponible */
+    padding: 20px;
+
+}
+
+/* Estilo para la sección derecha */
+.seccionIzq {
+    flex: 0 0 30%; /* La sección derecha tiene un ancho fijo del 30% */
+    padding: 20px;
+
+}
+
+/* Media query para hacer el diseño responsive */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Cambia a un diseño de columna en pantallas pequeñas */
+    }
+
+    .seccionIzq, .seccionDere {
+        flex: 1; /* Ambas secciones ocupan todo el ancho en pantallas pequeñas */
+        margin-bottom: 10px;
+    }
+}
+
+
+/**** BARRA DE NAVEFGACION ******/
+/* Estilos generales del cuerpo y del contenedor */
+
+
+/* Estilos para el contenedor de búsqueda */
+.search-container {
+    display: flex;
+    background-color: #fff;
+    border-radius: 25px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(32, 20, 200, 0.074);
+}
+
+/* Estilos para el campo de entrada */
+.search-container input[type="text"] {
+    border: none;
+    outline: none;
+    padding: 15px;
+    width: 300px;
+    font-size: 16px;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+
+/* Estilos para el botón de búsqueda */
+.search-container button {
+    background-color: #9e06a66b;
+    color: #fff;
+    border: none;
+    padding: 15px 20px;
+    cursor: pointer;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    transition: background-color 0.3s ease;
+    position: relative; /* Necesario para la animación */
+}
+
+/* Estilos para el icono dentro del botón */
+.search-container button i {
+    font-size: 18px;
+}
+
+/* Estilos hover para el botón */
+.search-container button:hover {
+    background-color: #683FEA;
+}
+
+/* Animación del ícono al hacer hover */
+.search-container button:hover i {
+    animation: iconSpin 0.5s forwards; /* Aplica la animación al ícono */
+}
+
+/* Definición de la animación del ícono */
+@keyframes iconSpin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+
+/**** BARRA DE NAVEFGACION ******/
+
+/**** CATEGORIAS ******/
+
+.categorias {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.categoria {
+    background-color: #fff;
+    padding: 20px; /* Reducido el padding */
+    margin: 10px; /* Reducido el margin */
+    border-radius: 8px; /* Ligeramente reducido el radio del borde */
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+.categoria .icono {
+    font-size: 36px; /* Reducido el tamaño del icono */
+    margin-bottom: 10px; /* Reducido el margen inferior del icono */
+}
+
+.categoria h3 {
+    font-size: 20px; /* Reducido el tamaño del título */
+    margin-bottom: 8px; /* Reducido el margen inferior del título */
+    color: #502a50;
+}
+
+.categoria p {
+    font-size: 14px; /* Reducido el tamaño del párrafo */
+    color: #666;
+    line-height: 1.4;
+}
+
+/**** CATEGORIAS ******/
+
+
+/**** TOPS ******/
+
+.top-posts {
+    max-width: 800px;
+    padding: 20px;
+    margin: auto;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.top-posts h2 {
+    color: #502a50;
+}
+
+#post-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+#post-list li {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #f5f5f5;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#post-list li:hover {
+    background-color: #e0e0e0;
+    cursor: pointer;
+}
+
+/**** CATEGORIAS ******/
+
+
+
+
+.most-searched {
+    padding: 80px 0;
+}
+
+.card {
+    border: none;
+    border-radius: 10px;
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+.card img{
+ width: 230px;
+ height: 300px;
+ margin-left: 60px;
+ border-radius: 10px;
+}
+.card-img-top {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.card-title {
+    color: #27094d;
+}
+
+.card-text {
+    color: #6c757d;
+}
+
+.btn-primary {
+    background-color: #27094d;
+    border-color: #27094d;
+}
+
+.btn-primary:hover {
+    background-color: #1a0638;
+    border-color: #1a0638;
+}
+
+.btn-primary{
+    background-color: #502a50;
+}
+

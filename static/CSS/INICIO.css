@@ -1,6 +1,12 @@
   /* Ajuste para eliminar espacio en blanco a la derecha */
-body{
+html{
+  scroll-behavior: smooth;
+}
+  body{
     background-color:   #ffffff;  
+    
+      
+    
 }
 *{
   box-sizing: border-box;
@@ -11,7 +17,7 @@ body{
   
         width: 100%;
         height: 600px;
-        background-image: url('../esencia_ima/INICIO.png'); /* Ruta de la imagen */
+        background-image: url('../IMG/INICIO.png'); /* Ruta de la imagen */
         background-size: cover; /* Para que la imagen se ajuste al tamaño del contenedor */
         background-position: center; /* Para centrar la imagen */
         color: white; /* Color del texto */
@@ -86,31 +92,29 @@ body{
 
 /**CARACTERISTICAS*/
 .card {
-  width: 190px;
- border: none;
- background: none;
+  width: 250px;
+  border: none !important; 
+  background: none;
 }
 
-
 .card-image {
- 
   width: auto;
-  height: 120px;
+  height: 150px;
   border-radius: 6px 6px 0 0;
   transition: transform 0.5s ease; 
 }
 
 .card-image:hover {
   transform: scale(1.2);
-
 }
 
 .category {
   text-transform: uppercase;
   font-size: 0.7em;
   font-weight: 600;
-  color: rgb(63, 135, 230);
+  color: rgb(151, 88, 156);
   padding: 10px 7px 0;
+  border: none !important; 
 }
 
 .category:hover {
@@ -120,6 +124,7 @@ body{
 .heading {
   font-weight: 600;
   padding: 7px;
+  border: none !important; 
 }
 
 .heading:hover {
@@ -127,22 +132,21 @@ body{
 }
 
 .author {
-  color: gray;
+  color: rgb(111, 112, 116);
   font-weight: 400;
-  font-size: 11px;
+  font-size: 15px;
   padding-top: 20px;
+  border: none !important; 
 }
 
 .name {
   font-weight: 600;
+  border: none !important; 
 }
 
 .name:hover {
   cursor: pointer;
 }
-
-
-
 
 .btn1 {
   border: none;
@@ -169,14 +173,15 @@ body{
   font-weight: 600;
   color: #AAAAAA;
   font-size: medium;
+  border: none !important; /* Añadido */
 }
 
 .btn1:hover {
-  background: linear-gradient(0deg,#A47CF3,#683FEA);
+  background: linear-gradient(0deg, #A47CF3, #683FEA);
   box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.4),
-  inset 0px -4px 0px 0px rgba(0, 0, 0, 0.2),
-  0px 0px 0px 4px rgba(255, 255, 255, 0.2),
-  0px 0px 180px 0px #9917FF;
+    inset 0px -4px 0px 0px rgba(0, 0, 0, 0.2),
+    0px 0px 0px 4px rgba(255, 255, 255, 0.2),
+    0px 0px 180px 0px #9917FF;
   transform: translateY(-2px);
 }
 
@@ -187,7 +192,8 @@ body{
 .btn1:hover .sparkle {
   fill: white;
   transform: scale(0.98);
-} 
+}
+
 /**FIN CARACTERISTICAS**/
 
 /**EVENTOS**/
@@ -195,8 +201,8 @@ body{
  width: 80%;
   position:relative;
   margin-top: 400px;
-  top: 50%;
-  left: 50%;
+margin-bottom: 80px;
+  left: 10%;
   transform: translate(-50%, -50%);
   width: 1000px;
   height: 600px;
@@ -209,7 +215,7 @@ body{
   width: 200px;
   height: 300px;
   position: absolute;
-  top: 50%;
+  top: 20%;
   transform: translate(0, -50%);
   border-radius: 20px;
   box-shadow: 0 30px 50px #505050;
@@ -217,6 +223,7 @@ body{
   background-size: cover;
   display: inline-block;
   transition: 0.5s;
+
  
 }
 
@@ -381,8 +388,10 @@ transition: 1s ease;
 
 
 /**BENEFICIOS**/
+
 .content_bene {
-  margin-top: 50px;
+  
+  margin-top: 150px;
   display: flex;
   max-width: 1000px;
   margin: 0 auto;
@@ -410,7 +419,7 @@ transition: 1s ease;
   padding: 8px; /* Reduced padding */
 
   text-align: left;
- width: 200px;
+ width: 220px;
  height: 150px;
 
 }
@@ -427,11 +436,11 @@ transition: 1s ease;
 .benefit h3 {
   color: #2c3e50;
   margin-bottom: 10px;
-  font-size: 1.3em; /* Smaller font size */
+  font-size:1.6em; /* Smaller font size */
 }
 .benefit p {
   color: #7f8c8d;
-  font-size: 0.9em; /* Smaller font size */
+  font-size: 1em; /* Smaller font size */
   text-align: justify;
 }
 .side-image {
