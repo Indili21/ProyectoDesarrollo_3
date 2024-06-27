@@ -1,6 +1,9 @@
 <!---------------------------ENLACES--------------------------------->
 <title>Servicios</title>
 <link rel="stylesheet" href="../CSS/servicios.css"/> <!-- Enlace CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
  
  <%- include('partials/htmlhead'); -%> <!-- Enlace plantilla del head -->
  
@@ -8,12 +11,77 @@
  <!---------------------------FIN ENLACES--------------------------------->
  
  <body>
- <!---------------------------SERVICIOS--------------------------->
 
+
+
+
+
+    <div class="banner"></div>
+
+
+
+
+    <section class="valores">
+        <div class="valor">
+            <div class="valor-icon">
+                <i class="bi bi-heart-fill"></i> <!-- Icono -->
+            </div>
+            <div class="valor-titulo">Compromiso</div>
+            <div class="valor-texto">
+                Nos comprometemos a ofrecer servicios de calidad que superen las expectativas de nuestros clientes.
+            </div>
+        </div>
+        
+        <div class="valor">
+            <div class="valor-icon">
+                <i class="bi bi-shield-fill-check"></i> <!-- Icono -->
+            </div>
+            <div class="valor-titulo">Seguridad</div>
+            <div class="valor-texto">
+                Priorizamos la seguridad en cada detalle de nuestros eventos, garantizando un ambiente seguro para todos.
+            </div>
+        </div>
+        
+        <div class="valor">
+            <div class="valor-icon">
+                <i class="bi bi-award-fill"></i> <!-- Icono -->
+            </div>
+            <div class="valor-titulo">Excelencia</div>
+            <div class="valor-texto">
+                Buscamos la excelencia en todo lo que hacemos, desde la planificación hasta la ejecución de cada evento.
+            </div>
+        </div>
+    </section>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <!---------------------------SERVICIOS--------------------------->
+ <h3 class="titulo">SERVICIOS</h3>
+ <div class="division"></div>
  <section class="servicios">
+
     <div class="servicio">
-      <img src="https://cdn0.bodas.com.mx/article-real-wedding/155/3_2/1280/jpg/1395171.jpeg" alt="Servicio 1">
-      <div class="contenido">
+        <div class="icono">
+            <i class="bi bi-stars"></i>
+<!-- Icono de bodas -->
+        </div>
+        <div class="contenido">
             <h3>Bodas y Ceremonias</h3>
             <p>Desde bodas íntimas hasta grandes ceremonias, ofrecemos servicios personalizados que hacen realidad el día más especial de tu vida.</p>
             <a href="#" class="boton">Más información</a>
@@ -21,7 +89,9 @@
     </div>
     
     <div class="servicio">
-      <img src="https://cdn0.bodas.com.mx/article-real-wedding/155/3_2/1280/jpg/1395171.jpeg" alt="Servicio 1">
+        <div class="icono">
+            <i class="bi bi-building"></i> <!-- Icono de eventos corporativos -->
+        </div>
         <div class="contenido">
             <h3>Eventos Corporativos</h3>
             <p>Conferencias, lanzamientos de productos, cenas de gala y más. Nuestro equipo se encarga de cada detalle para que tu evento corporativo sea profesional y exitoso.</p>
@@ -30,7 +100,9 @@
     </div>
     
     <div class="servicio">
-      <img src="https://cdn0.bodas.com.mx/article-real-wedding/155/3_2/1280/jpg/1395171.jpeg" alt="Servicio 1">
+        <div class="icono">
+            <i class="bi bi-music-note"></i> <!-- Icono de fiestas temáticas -->
+        </div>
         <div class="contenido">
             <h3>Fiestas Temáticas</h3>
             <p>Desde fiestas de cumpleaños hasta eventos de temporada, diseñamos experiencias únicas que dejarán una impresión duradera en tus invitados.</p>
@@ -39,7 +111,9 @@
     </div>
 
     <div class="servicio">
-      <img src="https://cdn0.bodas.com.mx/article-real-wedding/155/3_2/1280/jpg/1395171.jpeg" alt="Servicio 1">
+        <div class="icono">
+            <i class="bi bi-people"></i> <!-- Icono de celebraciones sociales -->
+        </div>
         <div class="contenido">
             <h3>Celebraciones Sociales</h3>
             <p>Incluyendo aniversarios, graduaciones y reuniones familiares. Cada evento social es una oportunidad para crear recuerdos inolvidables.</p>
@@ -48,7 +122,9 @@
     </div>
 
     <div class="servicio">
-      <img src="https://cdn0.bodas.com.mx/article-real-wedding/155/3_2/1280/jpg/1395171.jpeg" alt="Servicio 1">
+        <div class="icono">
+            <i class="bi bi-brush"></i> <!-- Icono de eventos culturales y artísticos -->
+        </div>
         <div class="contenido">
             <h3>Eventos Culturales y Artísticos</h3>
             <p>Organización de eventos que celebran la cultura, el arte y la creatividad, desde exposiciones hasta festivales y conciertos.</p>
@@ -57,7 +133,9 @@
     </div>
 
     <div class="servicio">
-      <img src="https://cdn0.bodas.com.mx/article-real-wedding/155/3_2/1280/jpg/1395171.jpeg" alt="Servicio 1">
+        <div class="icono">
+            <i class="bi bi-heart"></i> <!-- Icono de eventos benéficos y fundraising -->
+        </div>
         <div class="contenido">
             <h3>Eventos Benéficos y Fundraising</h3>
             <p>Ayudamos a organizaciones sin fines de lucro a planificar eventos para recaudar fondos de manera efectiva y significativa.</p>
@@ -67,56 +145,91 @@
 </section>
 <!---------------------------FIN SERVICIOS--------------------------->
 
-
-<!---------------------------TESTIMONIO--------------------------->
+<!---------------------------TESTIMONIOS--------------------------->
 <section class="testimonios">
-    <div class="testimonio">
-        <img src="../IMG/cliente1.jpg" alt="Cliente 1">
-        <blockquote>"Esencia realmente superó nuestras expectativas. El equipo hizo un trabajo increíble en nuestra boda, ¡no podríamos haber pedido más!"</blockquote>
-        <cite>- Juan y María</cite>
+    <div class="flip-card">
+        <div class="flip-card-inner">
+            <div class="flip-card-front">
+                <img src="../IMG/cliente1.jpg" alt="Cliente 1">
+                <cite>Juan Martínez</cite>
+                <cite>CEO TechWord</cite>
+            </div>
+            <div class="flip-card-back">
+                <p>"Esencia realmente superó nuestras expectativas. El equipo hizo un trabajo increíble en nuestra boda, ¡no podríamos haber pedido más!"</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="flip-card">
+        <div class="flip-card-inner">
+            <div class="flip-card-front">
+                <img src="../IMG/kimkardashian-e96c71f185084f6faaae48970c321247.jpeg" alt="Cliente 2">
+                <cite>Ana García</cite>
+                <cite>Directora de Marketing</cite>
+            </div>
+            <div class="flip-card-back">
+                <p>"Esencia nos ayudó a celebrar nuestro aniversario corporativo de manera memorable. Profesionalismo y atención a cada detalle."</p>
+            </div>            </div>
+        </div>
     </div>
 
-    <div class="testimonio">
-        <img src="../IMG/pareja.jpeg" alt="Cliente 2">
-        <blockquote>"Gracias a Esencia, nuestro evento corporativo fue un éxito total. Profesionalismo, creatividad y atención al detalle en cada aspecto."</blockquote>
-        <cite>- Carlos Gómez, CEO</cite>
+    <div class="flip-card">
+        <div class="flip-card-inner">
+            <div class="flip-card-front">
+                <img src="../IMG/pareja.jpeg" alt="Cliente 3">
+                <cite>Luis y Tamara García</cite>
+                <cite>Clientes Boda</cite>
+            </div>
+            <div class="flip-card-back">
+                <p>"Esencia realmente superó nuestras expectativas. El equipo hizo un trabajo increíble en nuestra boda, ¡no podríamos haber pedido más!"</p>
+              
+        </div>
     </div>
 </section>
 
+<!---------------------------TESTIMONIOS--------------------------->
 <section class="cotizacion">
     <div class="cotizacion-container">
-        <h2>Solicita una cotización</h2>
-        <form action="#" method="POST">
-            <div class="campo">
-                <label for="nombre">Nombre:</label>
-                <input type="text" id="nombre" name="nombre" required>
-            </div>
-            <div class="campo">
-                <label for="email">Correo electrónico:</label>
-                <input type="email" id="email" name="email" required>
-            </div>
-            <div class="campo">
-                <label for="telefono">Teléfono:</label>
-                <input type="tel" id="telefono" name="telefono">
-            </div>
-            <div class="campo">
-                <label for="servicio">Tipo de evento:</label>
-                <select id="servicio" name="servicio" required>
-                    <option value="">Selecciona el tipo de evento</option>
-                    <option value="Bodas">Bodas</option>
-                    <option value="Eventos corporativos">Eventos corporativos</option>
-                    <option value="Fiestas temáticas">Fiestas temáticas</option>
-                    <option value="Otro">Otro</option>
-                </select>
-            </div>
-            <div class="campo">
-                <label for="mensaje">Mensaje:</label>
-                <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
-            </div>
-            <button type="submit" class="boton">Enviar solicitud</button>
-        </form>
+        <div class="imagen">
+            <img src="../IMG/Esencia -03.png" alt="Imagen decorativa">
+        </div>
+        <div class="formulario">
+            <h2>Solicita una cotización</h2>
+            <form action="#" method="POST">
+                <div class="campo">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+                <div class="campo">
+                    <label for="email">Correo electrónico:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="campo">
+                    <label for="telefono">Teléfono:</label>
+                    <input type="tel" id="telefono" name="telefono">
+                </div>
+                <div class="campo">
+                    <label for="servicio">Tipo de evento:</label>
+                    <select id="servicio" name="servicio" required>
+                        <option value="">Selecciona el tipo de evento</option>
+                        <option value="Bodas">Bodas</option>
+                        <option value="Eventos corporativos">Eventos corporativos</option>
+                        <option value="Fiestas temáticas">Fiestas temáticas</option>
+                        <option value="Otro">Otro</option>
+                    </select>
+                </div>
+                <div class="campo">
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="boton">Enviar solicitud</button>
+            </form>
+        </div>
     </div>
-</section> 
+</section>
+
+
+
 </body>
 
 <!---------------------------TESTIMONIO--------------------------->
