@@ -1,14 +1,10 @@
 const express = require('express');
-const mysql = require('mysql');
 const bodyParser = require('body-parser');
 const bcrypt = require('bcrypt');
 const session = require('express-session');
 const path = require('path');
+const { Sequelize, DataTypes } = require('sequelize');
 const app = express();
-
-
-
-// El resto de tu configuración de Express...
 
 const port = process.env.PORT || 3000;
 
@@ -17,28 +13,30 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, 'static')));
 
-
-// Sirve archivos estáticos desde el directorio 'static'
-app.use('/static', express.static('static'));
-
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'views'));
 
-// Configurar la conexión a la base de datos MySQL
-const db = mysql.createConnection({
-  host: 'localhost',
-  user: 'root',
-  password: 'audel',
-  database: 'user_auth'
+// Configurar Sequelize para usar SQLite
+const sequelize = new Sequelize({
+  dialect: 'sqlite',
+  storage: './database.sqlite'
 });
 
-db.connect((err) => {
-  if (err) {
-    console.error('Error connecting to the database:', err);
-    return;
+// Definir el modelo de Usuario
+const User = sequelize.define('User', {
+  email: {
+    type: DataTypes.STRING,
+    allowNull: false,
+    unique: true
+  },
+  password: {
+    type: DataTypes.STRING,
+    allowNull: false
   }
-  console.log('Connected to the database');
 });
+
+// Sincronizar el modelo con la base de datos
+sequelize.sync();
 
 // Configurar las sesiones
 app.use(session({
@@ -80,34 +78,29 @@ app.post('/register', async (req, res) => {
 
   const hashedPassword = await bcrypt.hash(password, 10);
 
-  db.query('INSERT INTO users (email, password) VALUES (?, ?)', [email, hashedPassword], (err, result) => {
-    if (err) {
-      return res.status(500).send('Error registering user');
-    }
+  try {
+    await User.create({ email, password: hashedPassword });
     res.redirect('/login');
-  });
+  } catch (err) {
+    res.status(500).send('Error registering user');
+  }
 });
 
 // Ruta de login
-app.post('/login', (req, res) => {
+app.post('/login', async (req, res) => {
   const { email, password } = req.body;
 
   if (!email || !password) {
     return res.status(400).send('Email and password are required');
   }
 
-  db.query('SELECT * FROM users WHERE email = ?', [email], async (err, results) => {
-    if (err) {
-      return res.status(500).send('Error logging in');
-    }
-
-    if (results.length === 0) {
+  try {
+    const user = await User.findOne({ where: { email } });
+    if (!user) {
       return res.status(400).send('User not found');
     }
 
-    const user = results[0];
     const match = await bcrypt.compare(password, user.password);
-
     if (!match) {
       return res.status(400).send('Invalid password');
     }
@@ -115,7 +108,9 @@ app.post('/login', (req, res) => {
     req.session.userId = user.id;
     req.session.email = user.email;
     res.redirect('/');  // Redirigir a la página de inicio después del login
-  });
+  } catch (err) {
+    res.status(500).send('Error logging in');
+  }
 });
 
 // Ruta de logout
@@ -157,7 +152,6 @@ app.get('/form.ejs', isAuthenticated, (req, res) => {
   res.render('form');
 });
 
-// Manejar errores 404
 
 // Iniciar el servidor
 app.listen(port, () => {
