@@ -1,324 +1,4 @@
 
-/*//////////////////////////////////////////////////////////////////////////*/
-/*//////////////////////////   CCS CONTACTANOS   //////////////////////////*/
-/*////////////////////////////////////////////////////////////////////////*/
-
-body {
-    font-family: Arial, sans-serif;
-}
-
-h1 {
-    text-align: center;
-}
-
-h2 {
-    text-align: center;
-    margin-top: 100px;
-    margin-bottom: 30px;
-    color: #150C21;
-    
-    
-}
-
-
-
-/**BARRA DE NAVEGACIÓN*/
-.navbar-expand-lg{
-    margin-right: -100px;
-}
-.logo{
-    background: linear-gradient(75deg, #EFD0D6, #969DCB, #EFD0D6 );
-}
-img{
-    margin: 20px;
-}
-
-.navbar-nav .nav-item {
-    
-    position: relative;
-    width: 100px;
-    font-weight: 400;
-  }
-
-  .navbar-nav .nav-item .nav-link {
-    color: rgb(207, 78, 78);
-   
-    text-decoration: none;
-  }
-
-  .navbar-nav .nav-item .nav-link:hover {
-    color: #feb47b; /* Cambia el color del texto al hacer hover */
-  }
-
-  .navbar-nav .nav-item .nav-link::after {
-    content: '';
-    position: absolute;
-    width: 0;
-    height: 4px; /* Grosor de la línea */
-    bottom: 0;
-    left: 0;
-    background: linear-gradient(75deg, #EFD0D6, #969DCB  );
-    transition: width 0.3s ease-in-out;
-    border-radius: 4px; /* Puntas redondas */
-  }
-
-  .navbar-nav .nav-item .nav-link:hover::after {
-    width: 100%;
-  }
-
-
-
-
-
-/*//////////////////////////////////////////////////////////////////////////*/
-/*////////////////////////////   TARJETA UNO   ////////////////////////////*/
-/*////////////////////////////////////////////////////////////////////////*/
-.tarjeta1 {
-    width: 90%; /* Tamaño fijo de la tarjeta */
-    height: 200px; /* Tamaño fijo de la tarjeta */
-    background-image: url('../IMG/de_uno.png'); /* Ruta de la imagen de fondo */
-    background-size: cover; /* Ajusta el tamaño de la imagen para cubrir la tarjeta */
-    background-position: center; /* Centra la imagen de fondo */
-    border-radius: 10px; /* Borde redondeado */
-    overflow: hidden; /* Oculta cualquier contenido que se desborde de la tarjeta */
-    position: relative; /* Necesario para posicionar el contenido de manera absoluta */
-    margin: 0 auto; /*centrado*/
-    margin-top: 100px;/* Agrega un margen superior */
-     
-}
-
-.tarjeta1 a {
-
-   text-decoration: none;
-   color: #ffffff;
-   
-}
-
-.contenido1 {
-    position: absolute; /* Posiciona el contenido de manera absoluta dentro de la tarjeta */
-    top: 50%; /* Lo coloca en la mitad superior de la tarjeta */
-    left: 50%; /* Lo coloca en el centro horizontal de la tarjeta */
-    transform: translate(-50%, -50%); /* Lo centra vertical y horizontalmente */
-    text-align: center; /* Centra el texto horizontalmente */
-    color: white; /* Color del texto */
-    text-decoration: none; /* Quita la subrayado predeterminado del enlace */
-    font-size: 24px; /* Tamaño del texto */
-}
- 
-.contenido1 h3:hover {
-     color: #150C21; /* Color de texto al pasar el mouse */
-     cursor: pointer;
-}
-
-.oculto { /* Oculta los elementos h4 por defecto */
-    display: none;
-}
-
-
-/*//////////////////////////////////////////////////////////////////////////*/
-/*////////////////////////////   TARJETA DOS   ////////////////////////////*/
-/*////////////////////////////////////////////////////////////////////////*/
-.tarjeta2 {
-    width: 90%; /* Tamaño fijo de la tarjeta */
-    height: 200px; /* Tamaño fijo de la tarjeta */
-    background-image: url('../IMG/de_dos.png'); /* Ruta de la imagen de fondo */
-    background-size: cover; /* Ajusta el tamaño de la imagen para cubrir la tarjeta */
-    background-position: center; /* Centra la imagen de fondo */
-    border-radius: 10px; /* Borde redondeado */
-    overflow: hidden; /* Oculta cualquier contenido que se desborde de la tarjeta */
-    position: relative; /* Necesario para posicionar el contenido de manera absoluta */
-    margin: 0 auto;
-    margin-top: 30px;/* Agrega un margen superior */
-}
-
-.contenido2 {
-    position: absolute; /* Posiciona el contenido de manera absoluta dentro de la tarjeta */
-    top: 50%; /* Lo coloca en la mitad superior de la tarjeta */
-    left: 50%; /* Lo coloca en el centro horizontal de la tarjeta */
-    transform: translate(-50%, -50%); /* Lo centra vertical y horizontalmente */
-    text-align: center; /* Centra el texto horizontalmente */
-    color: white; /* Color del texto */
-    text-decoration: none; /* Quita la subrayado predeterminado del enlace */
-    font-size: 24px; /* Tamaño del texto */
-}
- 
-.contenido2 h3:hover {
-     color: #150C21; /* Color de texto al pasar el mouse */
-}
-
-
-/*//////////////////////////////////////////////////////////////////////////*/
-/*/////////////////////////   TARJETA INSTAGRAM   /////////////////////////*/
-/*////////////////////////////////////////////////////////////////////////*/
-.tarjeta3 {
-    width: 90%; 
-    height: 200px; 
-    background-image: url('../IMG/de_tres.png'); 
-    background-size: cover; 
-    background-position: center; 
-    border-radius: 10px;
-    overflow: hidden; 
-    position: relative; 
-    margin: 0 auto;
-    margin-top: 30px;
-}
-
-.contenido3 {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); 
-    text-align: center; 
-    color: white; 
-    text-decoration: none; 
-    font-size: 24px; 
-}
- 
-.contenido3 h3:hover {
-     color: #150C21;
-}
-
-
-/*//////////////////////////////////////////////////////////////////////////*/
-/*/////////////////////////   TARJETA FACEBOOK   //////////////////////////*/
-/*////////////////////////////////////////////////////////////////////////*/
-.tarjeta4 {
-    width: 90%; 
-    height: 200px; 
-    background-image: url('../IMG/de_cuatro.png'); 
-    background-size: cover; 
-    background-position: center; 
-    border-radius: 10px;
-    overflow: hidden; 
-    position: relative; 
-    margin: 0 auto;
-    margin-top: 30px;
-}
-
-.contenido4 {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); 
-    text-align: center; 
-    color: white; 
-    text-decoration: none; 
-    font-size: 24px; 
-}
- 
-.contenido4 h3:hover {
-     color: #150C21;
-}
-
-
-/*//////////////////////////////////////////////////////////////////////////*/
-/*/////////////////////////   TARJETA PINTEREST   /////////////////////////*/
-/*////////////////////////////////////////////////////////////////////////*/
-.tarjeta5 {
-    width: 90%; 
-    height: 200px; 
-    background-image: url('../IMG/de_cinco.png'); 
-    background-size: cover; 
-    background-position: center; 
-    border-radius: 10px;
-    overflow: hidden; 
-    position: relative; 
-    margin: 0 auto;
-    margin-top: 30px;
-    margin-bottom: 50px;
-}
-
-.contenido5 {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); 
-    text-align: center; 
-    color: white; 
-    text-decoration: none; 
-    font-size: 24px; 
-}
- 
-.contenido5 h3:hover {
-     color: #150C21;
-}
-
-
-
-.container2{
-	max-width: 1170px;
-	margin:auto;
-
-}
-.row{
-	display: flex;
-	flex-wrap: wrap;
-}
-ul{
-	list-style: none;
-}
-.footer{
-	background-color: #2b0a38;
-    padding: 70px 0;
-  
-}
-.footer-col{
-   width: 25%;
-   padding: 0 15px;
-}
-.footer-col h4{
-	font-size: 18px;
-	color: #f8d7ee;
-	text-transform: capitalize;
-	margin-bottom: 35px;
-	font-weight: 500;
-	position: relative;
-}
-.footer-col h4::before{
-	content: '';
-	position: absolute;
-	left:0;
-	bottom: -10px;
-  background: linear-gradient(75deg, #7a2d9e, #ce939f );
-	height: 5px;
-	box-sizing: border-box;
-	width: 60px;
-  border-radius: 10px;
-}
-.footer-col ul li:not(:last-child){
-	margin-bottom: 10px;
-}
-.footer-col ul li a{
-	font-size: 16px;
-	text-transform: capitalize;
-	color: #ffffff;
-	text-decoration: none;
-	font-weight: 300;
-	color: #bbbbbb;
-	display: block;
-	transition: all 0.3s ease;
-}
-.footer-col ul li a:hover{
-	color: #ffffff;
-	padding-left: 8px;
-}
-.footer-col .social-links a{
-	display: inline-block;
-	height: 40px;
-	width: 40px;
-	background-color: rgba(255,255,255,0.2);
-	margin:0 10px 10px 0;
-	text-align: center;
-	line-height: 40px;
-	border-radius: 50%;
-	color: #ffffff;
-	transition: all 0.5s ease;
-}
-.footer-col .social-links a:hover{
-	color: #24262b;
-  background: linear-gradient(135deg, #7a2d9e, #ce939f );
-}
-
 /*responsive*/
 @media(max-width: 767px){
   .footer-col{
@@ -333,3 +13,452 @@ ul{
 }
 
 
+/***********************BANER****************************************************/
+.banner {
+  height: 500px; /* Altura del banner */
+  background-image: url('../IMG/ban_contact1.jpg'); /* URL de la imagen de fondo */
+  background-size: cover;
+  background-position: center;
+}
+
+.banner::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 500px;
+  margin-top: 178px;
+  background-color: rgba(194, 165, 174, 0.5); /* Filtro transparente rosa */
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.header-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+
+ /***************************************** FORMULARIO*****************************/
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.box-envolutura{
+  transform: scale(.9);
+}
+
+.info-titulo {
+  font-size: clamp(1.2rem, 0.8rem + 3vw, 2rem);
+  font-weight: 700;
+  letter-spacing: 2px;
+  line-height: 26px;
+  color: white;
+  margin-top: 17px;
+}
+
+.form-titulo {
+  margin-top: px;
+  color: #272c2a;
+}
+
+/* Estructuras principales */
+.section-envoltura {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 20px;
+}
+
+.section-envoltura {
+  position: relative;
+  margin-top: -150px; /* Ajusta según sea necesario para superponer los contenedores sobre el banner */
+  z-index: 1;
+}
+
+.info-sub-titulo {
+  font-family: "Courier New", Courier, monospace;
+  font-size: clamp(0.5rem, 0.3rem + 3vw, 1rem);
+  font-weight: 500;
+  color: white;
+  letter-spacing: 0.5px;
+  line-height: 20px;
+  margin-top: 17px;
+}
+
+.box-envolutura {
+  width: 90%;
+  display: inline-flex;
+  margin: auto;
+}
+
+.box-envolutura > .info-envoltura {
+  background-color:white ;
+  width: 35%;
+  border-top-left-radius: 30px;
+  border-end-start-radius: 30px;
+  padding: 30px;
+}
+
+.info-detalles {
+  margin-top: 40px;
+  list-style-type: none;
+}
+
+.info-detalles li {
+  margin-top: 25px;
+  font-size: clamp(0.7rem, 0.4rem + 1vw, 1.4rem);
+  display: flex;
+  align-items: center;
+  color: #150C21;
+}
+
+.info-detalles li a {
+  color: white;
+}
+
+.material-symbols-outlined {
+  padding: 2px;
+  background-color: #969DCB;
+  margin-right: 10px;
+  transition: all 500ms linear;
+}
+
+.box-envolutura > .form-envoltura {
+  background: #D9D9D9;
+}
+
+.form-envoltura {
+  background: #ecf0f3;
+  width: 65%;
+  padding: 30px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  box-shadow: 5px 5px 10px rgba(184, 180, 180, 0.5); /* Sombras con color solo a la derecha y abajo */
+}
+
+.form-campos {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.form-campos .form-group {
+  flex-basis: 48%;
+  margin-top: 30px;
+}
+
+.botton-enviar {
+  width: 100%;
+  margin: auto;
+  display: block;
+  height: 60px;
+  border-radius: 30px;
+  outline: none;
+  border: 0;
+  background-color:  #150C21;
+  margin-top: 24px;
+  color: white;
+  font-size: 20px;
+  font-weight: 700;
+  transition: all 500ms linear;
+}
+
+.botton-enviar:hover {
+ background-color:#939AC9;
+ box-shadow: 0 4px 12px rgba(21, 12, 33, 0.5), 0 6px 24px rgba(21, 12, 33, 0.5);
+ color: #150C21;
+}
+
+.form-group:nth-child(5) {
+  flex-basis: 100%;
+}
+
+.form-group > input,
+.form-group > textarea {
+  width: 100%;
+  padding: 20px 20px 20px 30px;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  box-shadow: inset 8px 8px 8px #cbced1, inset -8px -8px 8px #ffffff;
+  background: #EDE9E9;
+  text-align: start;
+  font-size: 18px;
+  color: #555;
+}
+
+.form-group > textarea {
+  height: 150px;
+  resize: none;
+}
+
+@media only screen and (max-width: 850px){
+  .box-envolutura {
+    flex-direction: column;
+  }
+  .box-envolutura {
+    width: 100%;
+  }
+  .box-envolutura > .info-envoltura {
+    width: 100%;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-end-start-radius: 0;
+  }
+  .box-envolutura > .form-envoltura {
+    width: 100%;
+    border-end-end-radius: 30px;
+    border-end-start-radius: 30px;
+    border-top-right-radius: 0px;
+  }
+  .form-campos {
+    flex-direction: column;
+  }
+  .material-symbols-outlined {
+    margin-right: 8px;
+  }
+  .form-titulo {
+    text-align: center;
+  }}
+
+  /******************FIN FORMULARIO*********************************************/
+
+  /************************************TARJETAS******************************/
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+.contenedor {
+  display: flex ;
+  height: 200px;
+  margin-top: 0;
+}
+
+.caja {
+  flex: 4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 5px 5px 10px rgba(184, 180, 180, 0.5); /* Sombras con color solo a la derecha y abajo */
+}
+
+.caja-izquierda {
+  justify-content: center;
+  margin-right: 20px;
+  margin-left: 145px;
+  border-radius: 20px;
+  background-image: url('../IMG/de_cuatro.png'); /* Ruta relativa a la imagen de fondo */
+  background-size: cover; /* Ajusta el tamaño para cubrir completamente el contenedor */
+  background-position: center; /* Centra la imagen dentro del contenedor */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+  color: #150C21; /* Color del texto para mejor visibilidad */
+  font-weight: bold;
+}
+
+.caja-centro {
+  margin: 0 10px;
+  border-radius: 20px;
+  background-color: #EACDD5;
+  color: #150C21;
+  font-weight: bold;
+}
+
+.caja-derecha {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 690px;
+  margin-left: 20px;
+  margin-right: 145px;
+  border-radius: 20px;
+  background-image: url('../IMG/de_dos.png'); /* Ruta relativa a la imagen de fondo */
+  background-size: cover; /* Ajusta el tamaño para cubrir completamente el contenedor */
+  background-position: center; /* Centra la imagen dentro del contenedor */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+  background-color: #939AC9; /* Color de fondo de respaldo */
+}
+
+
+
+.caja-primera {
+  margin-right: 40px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  background-image: url('../IMG/BAN_CONTAC.png'); /* Ruta relativa a la imagen de fondo */
+  background-size: cover; /* Ajusta el tamaño de la imagen al contenedor */
+  background-position: center; /* Centra la imagen dentro del contenedor */
+  padding: 20px; /* Ajusta el relleno según sea necesario */
+  color: white; /* Color del texto para mejor visibilidad */
+  text-align: center; /* Alineación del contenido */
+}
+
+.caja-primera .contenido {
+  padding: 20px; /* Relleno adicional dentro del contenedor */
+}
+
+.contenido {
+  text-align: center;
+  position: relative;
+}
+.contenido i {
+  color: #27094D; /* Color inicial de los íconos */
+  font-size: 50px;
+  transition: color 0.3s ease;
+}
+.contenido i:hover {
+  color: white; /* Color inicial de los íconos */
+  font-size: 50px;
+  transition: color 0.3s ease;
+  
+}
+.contenido .fa-phone {
+  color: #27094D; /* Color inicial del ícono de teléfono */
+  font-size: 30px;
+}
+.contenido .fa-phone:hover {
+  color: white; /* Color inicial del ícono de teléfono */
+  font-size: 30px;
+}
+.contenido .fa-envelope {
+  color: #27094D; /* Color inicial del ícono de correo electrónico */
+  font-size: 30px;
+}
+.contenido .fa-envelope:hover {
+  color: white; /* Color inicial del ícono de correo electrónico */
+  font-size: 30px;
+}
+.contenido a {
+  margin: 0 10px;
+}
+.caja i {
+  font-size: 50px;
+  margin-bottom: 10px;
+}
+.caja .texto {
+  font-size: 16px;
+}
+/**************************FIN TARJETAS***********************************/
+
+/*********************MAPA**********************************************/
+.column.full {
+  width: 52.5%; /* Ancho completo */
+  margin-left: 145px;
+  margin-right: 100px;
+}
+.column.full iframe {
+  width: 100%; /* Ajusta el ancho del iframe al 100% del contenedor */
+  height: 450px; /* Altura fija del mapa */
+  border: 0; /* Elimina el borde del iframe */
+  border-radius: 20px;
+  margin-top: 40px;
+  margin-bottom: 60px;
+  box-shadow: 5px 5px 10px rgba(184, 180, 180, 0.5); /* Sombras con color solo a la derecha y abajo */
+}
+/*************************FIN MAPA*******************************************/
+
+/*********************ICONOS REDES SOCIALES***********************************/
+.social-icons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.social-icons a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px; /* Tamaño del círculo */
+  height: 100px; /* Tamaño del círculo */
+  margin: 30px 0; /* Espaciado entre los íconos */
+  border-radius: 50%;
+  background-color: #f0f0f0; /* Color de fondo del círculo */
+  color: white; /* Color inicial de los íconos */
+  font-size: 48px; /* Tamaño de los íconos */
+  transition: color 0.3s ease, background-color 0.3s ease;
+  text-decoration: none; /* Elimina el subrayado */
+}
+.social-icons a:nth-child(1):hover {
+  color: blue; /* Color del ícono al pasar el cursor sobre el ícono de Facebook */
+  background-color: #3b5998; /* Color de fondo del círculo al pasar el cursor sobre el ícono de Facebook */
+}
+.social-icons a:nth-child(2):hover {
+  color: rebeccapurple; /* Color del ícono al pasar el cursor sobre el ícono de Instagram */
+  background-color: #CF275C; /* Color de fondo del círculo al pasar el cursor sobre el ícono de Instagram */
+}
+.social-icons a:nth-child(3):hover {
+  color: #fff; /* Color del ícono al pasar el cursor sobre el ícono de Pinterest */
+  background-color: #bd081c; /* Color de fondo del círculo al pasar el cursor sobre el ícono de Pinterest */
+}
+
+/*****************************ANIMACIONES************************************/
+/**********************UBICACION*********************************************/
+ @keyframes spin{
+  0% {
+    transform: rotateY(0deg);
+  }
+  100% {
+    transform: rotateY(360deg);
+  }}
+
+.icono-giro {
+  display: inline-block;
+  animation: spin 5s linear infinite; /* 4s para una vuelta completa, linealmente repetida */
+}
+
+
+/**********************************TELEFONO************************************/
+/* Define la animación de vibración */
+@keyframes shake {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-2px);
+  }
+  50% {
+    transform: translateX(2px);
+  }
+  75% {
+    transform: translateX(-1px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/* Aplica la animación al icono */
+.icono-vibrar {
+  display: inline-block;
+  animation: shake 0.5s ease-in-out infinite; /* 0.5s para la duración de la animación */
+}
+
+/* Efecto de zoom en los contenedores al pasar el puntero */
+.caja:hover,
+.box-envolutura:hover,
+.column.full iframe:hover {
+  transform: scale(1.05); /* Aumenta el tamaño del contenedor al 105% */
+  transition: transform 0.3s ease-in-out; /* Añade una transición suave */
+}
+
+/* Asegúrate de que los contenedores tengan una transición por defecto */
+.caja,
+.box-envolutura,
+.column.full iframe {
+  transition: transform 0.3s ease-in-out; /* Añade una transición suave */
+}

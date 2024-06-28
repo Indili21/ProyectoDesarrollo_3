@@ -39,3 +39,22 @@ tituloTarjeta.addEventListener("click", function() {
 /**************************************************************/
 
 
+
+// Espera a que el DOM esté completamente cargado
+document.addEventListener('DOMContentLoaded', function () {
+    // Configura el mapa
+    var map = L.map('map').setView([40.7128, -74.0060], 15); // Coordenadas y nivel de zoom
+  
+    // Añade una capa de mapa (Mapa base)
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+    }).addTo(map);
+  
+    // Añade un marcador en la ubicación exacta
+    var marker = L.marker([40.7128, -74.0060]).addTo(map)
+      .bindPopup('Ubicación exacta')
+      .openPopup();
+  });
+  
+
+
