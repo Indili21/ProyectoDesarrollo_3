@@ -1,49 +1,6 @@
-  /* Ajuste para eliminar espacio en blanco a la derecha */
-  body{
-    background-color:   #ffffff;
-    
-}
-*
-{
-  box-sizing: border-box;
-}
 
-.logo{
-    background: linear-gradient(75deg, #EFD0D6, #969DCB, #EFD0D6 );
-}
-
-.navbar-nav .nav-item {
-    
-    position: relative;
-    width: 100px;
-    font-weight: 400;
-  }
-
-  .navbar-nav .nav-item .nav-link {
-    color: rgb(207, 78, 78);
-   
-    text-decoration: none;
-  }
-
-  .navbar-nav .nav-item .nav-link:hover {
-    color: #feb47b; /* Cambia el color del texto al hacer hover */
-  }
-
-  .navbar-nav .nav-item .nav-link::after {
-    content: '';
-    position: absolute;
-    width: 0;
-    height: 4px; /* Grosor de la línea */
-    bottom: 0;
-    left: 0;
-    background: linear-gradient(75deg, #EFD0D6, #969DCB  );
-    transition: width 0.3s ease-in-out;
-    border-radius: 4px; /* Puntas redondas */
-  }
-
-  .navbar-nav .nav-item .nav-link:hover::after {
-    width: 100%;
-  }
+/************************** INICIO*****************************/
+/***************************************************************/
 
   .txtinicio {
     text-align: center;
@@ -77,7 +34,7 @@
         background-image: url('/IMG/inicio.jpeg'); /* Ruta de la imagen */
         background-size: cover; /* Para que la imagen se ajuste al tamaño del contenedor */
         background-position: center; /* Para centrar la imagen */
-        color: white; /* Color del texto */
+ 
        
         padding-top: 100px; /* Espacio en la parte superior */
         display: grid;
@@ -180,8 +137,8 @@
 }
 
 
-
-
+/************************** TARJETAS *****************************/
+/***************************************************************/
 
 .card {
     width: 190px;
@@ -258,14 +215,13 @@
   }
   
   .sparkle {
-    fill: #AAAAAA;
+ 
     transition: all 800ms ease;
   }
   
   .text {
     font-weight: 600;
-    color: #AAAAAA;
-    font-size: medium;
+    color: #AAAAAA;    font-size: medium;
   }
   
   .btn1:hover {
@@ -288,6 +244,8 @@
 
 
 
+/************************** CARRUSEL *****************************/
+/***************************************************************/
   .container3{
   
     position:relative;
@@ -501,6 +459,8 @@ transition: 1s ease;
 
 
 
+/************************** BENEFICIOS *****************************/
+/***************************************************************/
 
 .content_bene {
   margin-top: 50px;
@@ -521,14 +481,13 @@ transition: 1s ease;
 }
 .cont_bene {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px,1fr));
-  gap: 50px; /* Adjust the gap between the benefit boxes */
- margin: 0;
- justify-content: center;
-
- 
-
+  grid-template-columns: repeat(2, 1fr); /* 2 columnas con igual ancho */
+  grid-template-rows: repeat(2, auto); /* 2 filas con altura automática */
+  gap: 50px; /* Espacio entre las cajas de beneficio */
+  margin: 50px; /* Agrega px para la unidad */
+  justify-content: center;
 }
+
 
 .imag{
  margin: 0 auto;
@@ -574,8 +533,8 @@ transition: 1s ease;
 
 
 
-
-
+/************************** FOOTER *****************************/
+/***************************************************************/
 
 .container2{
 	max-width: 1170px;
@@ -713,7 +672,6 @@ ul{
 }
 
 
-
 .pros,.pros23
 {
   width: 100%;
@@ -722,3 +680,4 @@ ul{
 }
 
 
+/************************** FOOTER *****************************/

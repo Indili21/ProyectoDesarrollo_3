@@ -3,26 +3,20 @@
 <link rel="stylesheet" href="../CSS/servicios.css"/> <!-- Enlace CSS -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
 <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/> <!-- Enlace Animate.css -->
+<link rel="stylesheet" href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css"/> <!-- Enlace AOS CSS -->
 
- 
- <%- include('partials/htmlhead'); -%> <!-- Enlace plantilla del head -->
- 
- 
- <!---------------------------FIN ENLACES--------------------------------->
- 
+<%- include('partials/htmlhead'); -%> <!-- Enlace plantilla del head -->
+<!---------------------------FIN ENLACES--------------------------------->
+
+
  <body>
 
-
-
-
+     <!---------------------------VALORES--------------------------------->
 
     <div class="banner"></div>
-
-
-
-
     <section class="valores">
-        <div class="valor">
+        <div class="valor" data-aos="fade-up">
             <div class="valor-icon">
                 <i class="bi bi-heart-fill"></i> <!-- Icono -->
             </div>
@@ -32,7 +26,7 @@
             </div>
         </div>
         
-        <div class="valor">
+        <div class="valor" data-aos="fade-up" data-aos-delay="100">
             <div class="valor-icon">
                 <i class="bi bi-shield-fill-check"></i> <!-- Icono -->
             </div>
@@ -42,7 +36,7 @@
             </div>
         </div>
         
-        <div class="valor">
+        <div class="valor" data-aos="fade-up" data-aos-delay="200">
             <div class="valor-icon">
                 <i class="bi bi-award-fill"></i> <!-- Icono -->
             </div>
@@ -52,34 +46,18 @@
             </div>
         </div>
     </section>
+
     
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+ <!---------------------------FIN VALORES--------------------------------->
 
 
  <!---------------------------SERVICIOS--------------------------->
  <h3 class="titulo">SERVICIOS</h3>
  <div class="division"></div>
  <section class="servicios">
-
-    <div class="servicio">
+    <div class="servicio" data-aos="fade-left">
         <div class="icono">
             <i class="bi bi-stars"></i>
-<!-- Icono de bodas -->
         </div>
         <div class="contenido">
             <h3>Bodas y Ceremonias</h3>
@@ -88,9 +66,9 @@
         </div>
     </div>
     
-    <div class="servicio">
+    <div class="servicio" data-aos="fade-left" data-aos-delay="100">
         <div class="icono">
-            <i class="bi bi-building"></i> <!-- Icono de eventos corporativos -->
+            <i class="bi bi-building"></i>
         </div>
         <div class="contenido">
             <h3>Eventos Corporativos</h3>
@@ -99,9 +77,9 @@
         </div>
     </div>
     
-    <div class="servicio">
+    <div class="servicio" data-aos="fade-left" data-aos-delay="200">
         <div class="icono">
-            <i class="bi bi-music-note"></i> <!-- Icono de fiestas temáticas -->
+            <i class="bi bi-music-note"></i>
         </div>
         <div class="contenido">
             <h3>Fiestas Temáticas</h3>
@@ -110,9 +88,9 @@
         </div>
     </div>
 
-    <div class="servicio">
+    <div class="servicio" data-aos="fade-left" data-aos-delay="300">
         <div class="icono">
-            <i class="bi bi-people"></i> <!-- Icono de celebraciones sociales -->
+            <i class="bi bi-people"></i>
         </div>
         <div class="contenido">
             <h3>Celebraciones Sociales</h3>
@@ -121,9 +99,9 @@
         </div>
     </div>
 
-    <div class="servicio">
+    <div class="servicio" data-aos="fade-left" data-aos-delay="400">
         <div class="icono">
-            <i class="bi bi-brush"></i> <!-- Icono de eventos culturales y artísticos -->
+            <i class="bi bi-brush"></i>
         </div>
         <div class="contenido">
             <h3>Eventos Culturales y Artísticos</h3>
@@ -132,9 +110,9 @@
         </div>
     </div>
 
-    <div class="servicio">
+    <div class="servicio" data-aos="fade-left" data-aos-delay="500">
         <div class="icono">
-            <i class="bi bi-heart"></i> <!-- Icono de eventos benéficos y fundraising -->
+            <i class="bi bi-heart"></i>
         </div>
         <div class="contenido">
             <h3>Eventos Benéficos y Fundraising</h3>
@@ -143,11 +121,12 @@
         </div>
     </div>
 </section>
+
 <!---------------------------FIN SERVICIOS--------------------------->
 
 <!---------------------------TESTIMONIOS--------------------------->
 <section class="testimonios">
-    <div class="flip-card">
+    <div class="flip-card" data-aos="flip-right">
         <div class="flip-card-inner">
             <div class="flip-card-front">
                 <img src="../IMG/cliente1.jpg" alt="Cliente 1">
@@ -160,7 +139,7 @@
         </div>
     </div>
     
-    <div class="flip-card">
+    <div class="flip-card" data-aos="flip-right" data-aos-delay="100">
         <div class="flip-card-inner">
             <div class="flip-card-front">
                 <img src="../IMG/kimkardashian-e96c71f185084f6faaae48970c321247.jpeg" alt="Cliente 2">
@@ -169,11 +148,11 @@
             </div>
             <div class="flip-card-back">
                 <p>"Esencia nos ayudó a celebrar nuestro aniversario corporativo de manera memorable. Profesionalismo y atención a cada detalle."</p>
-            </div>            </div>
+            </div>
         </div>
     </div>
 
-    <div class="flip-card">
+    <div class="flip-card" data-aos="flip-right" data-aos-delay="200">
         <div class="flip-card-inner">
             <div class="flip-card-front">
                 <img src="../IMG/pareja.jpeg" alt="Cliente 3">
@@ -182,13 +161,16 @@
             </div>
             <div class="flip-card-back">
                 <p>"Esencia realmente superó nuestras expectativas. El equipo hizo un trabajo increíble en nuestra boda, ¡no podríamos haber pedido más!"</p>
-              
+            </div>
         </div>
     </div>
 </section>
 
-<!---------------------------TESTIMONIOS--------------------------->
-<section class="cotizacion">
+
+<!--------------------------- FIN TESTIMONIOS--------------------------->
+
+<!--------------------------- COTIZACIÓN --------------------------------->
+<section class="cotizacion" data-aos="fade-up">
     <div class="cotizacion-container">
         <div class="imagen">
             <img src="../IMG/Esencia -03.png" alt="Imagen decorativa">
@@ -227,11 +209,16 @@
         </div>
     </div>
 </section>
+<!---------------------------FIN  COTIZACIÓN --------------------------------->
 
 
+
+<script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 
 </body>
 
-<!---------------------------TESTIMONIO--------------------------->
 
 <%- include('partials/htmlfooter'); -%> <!-- Enlace plantilla del Footer -->
