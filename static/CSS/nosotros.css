@@ -1,0 +1,279 @@
+
+  
+  *{
+    color: #27094d;
+  }
+  /* Estilos para el banner */
+.banner {
+    position: relative;
+    overflow: hidden;
+    height: 400px; /* Ajusta la altura según tus necesidades */
+
+}
+
+.banner-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    transition: opacity 0.5s ease-in-out;
+    margin-left: -20px;
+    margin-top: -20px;
+    margin-bottom: 50px;
+
+}
+
+.banner-image img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.banner-text {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    padding: 100px 50px; /* Ajusta el padding según sea necesario */
+    color: #fff;
+    background-color: #26094d4d;
+    height: 500px;
+
+}
+
+.banner-text h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.banner-text p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #fff;
+}
+
+
+/* Estilos para la imagen de fondo */
+.imagen {
+    margin-top: -30px;
+    overflow: hidden;
+}
+
+.imagen img {
+    object-fit: cover;
+    width: 100%;
+}
+
+/* Estilos para los contenidos */
+.content {
+    margin-top: 500px;
+background-color: transparent;
+}
+
+.content h1 {
+    color: #27094d;
+}
+
+.content p {
+    margin-bottom: 0;
+}
+
+/* Estilos para la lista de clientes */
+.row-clientes {
+    margin-top: 30px;
+}
+
+.col-cliente {
+    text-align: center;
+}
+
+.col-cliente img {
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+
+
+/* Estilos para el título de sección */
+.section-title {
+    color: #27094d;
+    margin-bottom: 30px;
+}
+
+/* Estilos para la sección de contenido en columnas */
+.col-content {
+    margin-top: 30px;
+}
+
+.col-content img {
+    width: 100%;
+    border-radius: 8px;
+   
+}
+
+.col-content h1 {
+    color: #27094d;
+    margin-bottom: 20px;
+}
+
+.col-content p {
+    margin-bottom: 0;
+}
+
+
+
+
+
+.nosotros-container {
+    max-width: 1000px; /* Ancho máximo aumentado */
+    margin: 20px auto;
+
+    padding: 20px;
+    border-radius: 8px;
+  
+}
+
+.nosotros-title {
+    text-align: center;
+    color: #2F2865;
+    margin-bottom: 20px;
+    margin-top: 50px;
+}
+
+.nosotros-content-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.nosotros-column {
+    width: calc(33.33% - 20px);
+    margin-bottom: 20px;
+}
+
+.nosotros-description {
+
+    padding: 50px;
+    border-radius: 8px;
+text-align: center;
+border-radius:500px ;
+color: #2F2865;
+background-color: rgba(248, 231, 245, 0.521);
+}
+
+.nosotros-specialties {
+      
+
+    padding: 50px;
+    text-align: center;
+    height: 380px;
+    justify-content: center;
+    border-radius:500px ;
+    color: #2F2865;
+    background-color: rgba(248, 231, 245, 0.521);
+}
+
+.specialty {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.specialty img {
+    width: 30px; /* Ajusta el tamaño del icono según sea necesario */
+    margin-right: 10px;
+}
+
+.nosotros-image img {
+    margin-top: -20px;
+    max-width: 100%;
+    border-radius: 8px;
+    margin-left: -5px;
+
+}
+
+@media (max-width: 768px) {
+    .nosotros-column {
+        width: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 480px) {
+    .nosotros-column {
+        width: 100%;
+    }
+}
+
+.division{
+    background: linear-gradient(135deg, #754a99, #c88aec, #db8196);
+height: 5px;
+width: 100px;
+margin: 0 auto; /* Margen automático para centrar */
+border-radius: 10px;
+margin-top: -5px;
+}
+
+
+
+.acerca-del-equipo {
+
+    padding: 40px;
+    margin-top: 50px;
+    margin-left: 100px;
+}
+.acerca-del-equipo .row {
+    align-items: center; /* Alinear verticalmente los elementos */
+}
+.acerca-del-equipo .info {
+    padding-right: 20px;
+    width: 510px;
+    text-align: justify;
+    color: #27094d;
+ 
+}
+.acerca-del-equipo img {
+    max-width: 60%;
+    height: auto;
+    border-radius: 10px;
+   
+}
+.acerca-del-equipo .imga {
+    max-width: 60%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-left: 100px;
+}
+
+
+
+.col-md-4 img{
+    text-decoration: none;
+    width: 300px;
+    margin-left: 80px;
+}
+
+
+
+
+
+    .mission-section, .vision-section {
+        padding: 40px;
+        background-color: #faf8fa;
+        margin-top: 80px;
+        margin-bottom: 50px;
+        text-align: center;
+        border-radius: 30px;
+        height: 350px;
+        margin-right: 50px;
+    }
+    .mission-content h2, .vision-content h2 {
+        color: #27094d;
+    }
+    .mission-content p, .vision-content p {
+        font-size: 18px;
+    
+    }
+  

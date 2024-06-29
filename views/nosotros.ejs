@@ -1,118 +1,156 @@
 <!---------------------------ENLACES--------------------------------->
-<title>Nosotros</title> 
+<title>Nosotros</title>
+<link rel="stylesheet" href="../CSS/nosotros.css"/> <!-- Enlace CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/> <!-- Enlace Animate.css -->
+<link rel="stylesheet" href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css"/> <!-- Enlace AOS CSS -->
+<!-- Enlace a Bootstrap CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css">
+
 
 <%- include('partials/htmlhead'); -%> <!-- Enlace plantilla del head -->
-
-
 <!---------------------------FIN ENLACES--------------------------------->
 
   <body>
   
-    <!--aqui enpieza la imagen-->
-    <div class="imagen">
-      <img src="/IMG/planificador-bodas-femenino-trabajando-ceremonia (1).jpg" alt="" class="img-fluid w-100">
-    </div>
-    
-    <!--aqui empieza la parte del primer contenido-->
-    
-    
-    <div class="container">
-      <div class="row justify-content-end" style="margin-top: -30px;">
-        <div class="col-md-6">
-          <div class="content" style="background-color: #fdfcfc; padding: 40px; margin-top: -20px; padding-left: 20px; padding-right: 20px;">
-            <h1 class="mb-4">Acerca del Equipo de Esencia</h1>
-            <p>
-              Somos un equipo apasionado de profesionales dedicados a hacer realidad los sueños de nuestros clientes. Cada miembro de nuestro equipo aporta una combinación única de talento, creatividad y experiencia en eventos para garantizar que cada celebración sea única y memorable. Nos esforzamos por brindar un servicio excepcional, desde la planificación inicial hasta la ejecución impecable del evento, trabajando en estrecha colaboración con nuestros clientes para entender sus visiones y superar sus expectativas. En Esencia, creemos que cada evento es una oportunidad para crear momentos inolvidables y estamos comprometidos a hacer que cada celebración sea especial y significativa para nuestros clientes y sus seres queridos.
-            </p>
+ 
+      <!-- Aquí empieza el banner -->
+      <div class="banner" data-aos="fade-up">
+          <div class="banner-image">
+              <img src="/IMG/female-wedding-planner-working-with-couple.jpg" alt="" class="img-fluid w-100">
           </div>
-        </div>
-      </div>
-    </div>
-    
-    <!--aqui comienza el segundo contenido-->
-    
-    <div class="container mt-5">
-      <div class="row">
-        <div class="col-md-6 d-flex">
-          <img src="/static/IMG/female-wedding-planner-working-with-couple.jpg" alt="" class="img-fluid align-self-stretch" >
-        </div>
-        <div class="col-md-6 d-flex flex-column">
-          <h1>Planificación y Logística con Nuestros Clientes</h1>
-          <div class="flex-grow-1">
-            <p>En Esencia, entendemos la importancia de una planificación meticulosa y una logística impecable para el éxito de cada evento. Trabajamos en estrecha colaboración con nuestros clientes desde el primer día para comprender sus necesidades, deseos y expectativas. Nos comprometemos a proporcionar un proceso de planificación transparente y sin estrés, donde cada detalle se discute y se decide con cuidado. Nuestro equipo de expertos en logística se encarga de coordinar todos los aspectos del evento, desde la selección del lugar hasta la gestión de proveedores y la coordinación del día del evento. Nos esforzamos por garantizar que cada aspecto del evento se ejecute sin problemas, permitiendo a nuestros clientes relajarse y disfrutar de su día especial con total tranquilidad.</p>
+          <div class="banner-text">
+              <h1>Bienvenido a Esencia</h1>
+              <p>Tu guía completa para la organización de eventos</p>
+              <p>Explora nuestros blogs llenos de ideas y consejos para hacer de tu evento una experiencia inolvidable.</p>
           </div>
-        </div>
       </div>
-    </div>
-    
-    
+      <!-- Aquí termina el banner -->
+      
+      <!-- Resto del contenido de la página -->
 
-    <!--aqui termina el segundo-->
-    
-    <!--aqui comienza el tercero-->
-    <div class="container mt-5">
-      <div class="row">
-        <div class="col-md-6 order-md-2"> <!-- Cambié el orden de esta columna en dispositivos medianos y grandes -->
-          <img src="/static/IMG/planificador-bodas-femenino-que-trabaja-novia-novio.jpg" alt="" class="img-fluid">
+  
+      <div class="containermision" data-aos="fade-up">
+        <div class="row align-items-center">
+            <div class="col-md-4">
+                <img src="/IMG/Esencia -02.png" alt="Imagen superior" >
+            </div>
+            <div class="col-md-4">
+                <div class="mission-section">
+                    <div class="mission-content">
+                        <h2 class="mb-4">Nuestra Misión</h2>
+                        <p class="lead">En Esencia, nos dedicamos a hacer realidad los sueños de nuestros clientes.</p>
+                        <p>Somos un equipo apasionado de profesionales dedicados a garantizar que cada celebración sea única y memorable. </p>
+                        </div>
+                </div>
+            </div>
+            <div class="col-md-4" data-aos="fade-up">
+                <div class="vision-section">
+                    <div class="vision-content">
+                        <h2 class="mb-4">Nuestra Visión</h2>
+                        <p class="lead">En Esencia, aspiramos a ser líderes en la creación de eventos memorables y significativos.</p>
+                        <p>Buscamos transformar cada celebración en una experiencia única, donde cada detalle refleje la esencia y los valores de nuestros clientes.</p>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="col-md-6 order-md-1"> <!-- Cambié el orden de esta columna en dispositivos medianos y grandes -->
-          <h1>El Día del Evento y Nuestras Indicaciones para los Clientes</h1>
-          <p>El día del evento es el culmen de semanas o meses de planificación y preparación meticulosa. En Esencia, nos aseguramos de que nuestros clientes estén completamente informados y preparados para disfrutar al máximo de su día especial. Proporcionamos indicaciones detalladas y horarios claros para que nuestros clientes sepan qué esperar y cuándo. Nuestro equipo estará presente para coordinar todos los aspectos del evento, desde la llegada de los proveedores hasta la despedida de los últimos invitados. Nos aseguramos de que cada detalle se maneje con cuidado y profesionalismo, permitiendo a nuestros clientes relajarse y disfrutar plenamente de su celebración. Una vez que el evento llega a su fin, nos aseguramos de que todo se cierre de manera ordenada y eficiente, dejando a nuestros clientes con recuerdos preciosos y una experiencia inolvidable.</p>
-        </div>
-      </div>
     </div>
     
-    <!--aqui termina el tercero-->
+      <div class="nosotros-container" data-aos="fade-up">
+        <h2 class="nosotros-title">¿Quiénes Somos?</h2>
+        <div class="division"></div>
+        <div class="nosotros-content-row">
+            <div class="nosotros-column nosotros-description">
+                <h3>Descripción de la Empresa</h3>
+                <p>Unity Work es una empresa innovadora en el campo del desarrollo de software, dedicada a proporcionar soluciones tecnológicas personalizadas que optimizan procesos empresariales.</p>
+            </div>
+            <div class="nosotros-column nosotros-image">
+              <img src="/IMG/Esencia -06.png" alt="Imagen representativa"> <!-- Ruta de la imagen -->
+          </div>
+            <div class="nosotros-column nosotros-specialties">
+                <h3>Nuestras Especialidades</h3>
+                <div class="specialty">
+                    <i class="fas fa-laptop-code fa-lg mr-3"></i>
+                    <p>Desarrollo de Aplicaciones Web</p>
+                </div>
+                <div class="specialty">
+                    <i class="fas fa-database fa-lg mr-3"></i>
+                    <p>Integración de Sistemas</p>
+                </div>
+                <div class="specialty">
+                    <i class="fas fa-cogs fa-lg mr-3"></i>
+                    <p>Automatización de Procesos</p>
+                </div>
+            </div>
+           
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script> <
+
+    <div class="container"data-aos="fade-right">
+      <div class="row acerca-del-equipo">
+          <div class="col-md-6 info">
+              <h1 class="mb-4">Acerca del Equipo de Esencia</h1>
+              <p>Somos un equipo apasionado de profesionales dedicados a hacer realidad los sueños de nuestros clientes. Cada miembro de nuestro equipo aporta una combinación única de talento, creatividad y experiencia en eventos para garantizar que cada celebración sea única y memorable. Nos esforzamos por brindar un servicio excepcional, desde la planificación inicial hasta la ejecución impecable del evento, trabajando en estrecha colaboración con nuestros clientes para entender sus visiones y superar sus expectativas. En Esencia, creemos que cada evento es una oportunidad para crear momentos inolvidables y estamos comprometidos a hacer que cada celebración sea especial y significativa para nuestros clientes y sus seres queridos.</p>
+          </div>
+          <div class="col-md-6">
+              <img class="imga" src="/IMG/pexels-cottonbro2.jpg" alt="Equipo de Esencia" class="img-fluid">
+          </div>
+      </div>
+  </div>
+
+  
+
+  <div class="container"data-aos="fade-left">
+    <div class="row acerca-del-equipo">
+      <div class="col-md-6">
+        <img src="/IMG/pexels-bilge-7.jpg" alt="Equipo de Esencia" class="img-fluid">
+    </div>
+        <div class="col-md-6 info">
+            <h1 class="mb-4">Planificación y Logística con Nuestros Clientes</h1>
+            <p>En Esencia, entendemos la importancia de una planificación meticulosa y una logística impecable para el éxito de cada evento. Trabajamos en estrecha colaboración con nuestros clientes desde el primer día para comprender sus necesidades, deseos y expectativas. Nos comprometemos a proporcionar un proceso de planificación transparente y sin estrés, donde cada detalle se discute y se decide con cuidado. </p>
+        </div>
+       
+    </div>
+</div>
+
 
     <!--aqui comienza la lista de nuestros clientes-->
     
-    <div class="container mt-4">
+    <div class="container mt-4"data-aos="fade-up">
       <h2>Nuestros Clientes Notables</h2>
       <hr> <!-- Línea para separar visualmente -->
       <div class="row">
         <div class="col-md-3">
-          <img src="/static/IMG/1366_2000.jpg" alt="" class="img-fluid">
+          <img src="/IMG/1366_2000.jpg" alt="" class="img-fluid">
           <p>serena williams</p>
         </div>
         <div class="col-md-3">
-          <img src="/static/IMG/harry-y-meghan_28cbf9aa_1200x818.jpg" alt="" class="img-fluid">
+          <img src="/IMG/harry-y-meghan_28cbf9aa_1200x818.jpg" alt="" class="img-fluid">
           <p>Prinsipe harry</p>
         </div>
         <div class="col-md-3">
-          <img src="/static/IMG/kimkardashian-e96c71f185084f6faaae48970c321247.jpeg" alt="" class="img-fluid">
+          <img src="/IMG/kimkardashian-e96c71f185084f6faaae48970c321247.jpeg" alt="" class="img-fluid">
           <p>Kim Kardashian</p>
         </div>
         <div class="col-md-3">
-          <img src="/static/IMG/brad.jpg" alt="" class="img-fluid">
+          <img src="/IMG/brad.jpg" alt="" class="img-fluid">
           <p>brad pitt</p>
         </div>
       </div>
       <hr> <!-- Línea para separar visualmente -->
     </div>
     
-    <!--aqui termina nuestros clientes-->
-
-    <!--aqui comiensa la parte final-->
-
-    <div class="container mt-5">
-      <div class="row">
-        <div class="col-md-6">
-          <img src="/static/IMG/planificador-bodas-femenino-trabajando-ceremonia (1).jpg" alt="" class="img-fluid w-100">
-        </div>
-        <div class="col-md-6">
-          <div class="content-container">
-            <h1>Orgullosa de Ser Diseñadora de Eventos</h1>
-            <p>Me encuentro inmersa en el corazón de un evento, rodeada de detalles que cobran vida. Cada rincón está impregnado con la esencia de la celebración que hemos creado con tanto cuidado. Ver la sonrisa en el rostro de nuestros clientes es mi mayor alegría, es el testimonio de que hemos logrado superar sus expectativas y hacer realidad sus sueños. En Esencia, cada evento es una oportunidad para crear momentos inolvidables, y me siento privilegiada de ser parte de este viaje emocionante.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    
-    <!--aqui termina la parte final-->
-     <!---------------------------------------FOOTER------------------------------>
-
+   
 
     <script src="Bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+
   </body>
 
   <%- include('partials/htmlfooter'); -%> <!-- Enlace plantilla del Footer -->

@@ -45,19 +45,19 @@ document.addEventListener('DOMContentLoaded', function() {
             date: '1 de junio de 2024'
         },
         {
-            imgSrc: '/IMG/pexels-7.jpg',
+            imgSrc: '/IMG/pexels-3.jpg',
             title: 'Decoración de exteriores',
             content: 'En Esencia, nos especializamos en crear ambientes únicos al aire libre, donde cada detalle contribuye a la atmósfera del evento.',
             date: '28 de mayo de 2024'
         },
         {
-            imgSrc: '/IMG/pexels-8.jpg',
+            imgSrc: '/IMG/pexels-amina-4.jpg',
             title: 'La importancia de la iluminación',
             content: 'Descubre cómo la iluminación puede transformar un espacio y realzar la belleza de tu evento con nuestro equipo en Esencia.',
             date: '25 de mayo de 2024'
         },
         {
-            imgSrc: '/IMG/pexels-9.jpg',
+            imgSrc: '/IMG/pexels-cottonbro2.jpg',
             title: 'Música y ambiente',
             content: 'Explora cómo la selección musical adecuada puede crear la atmósfera perfecta para tu evento con los expertos en Esencia.',
             date: '22 de mayo de 2024'

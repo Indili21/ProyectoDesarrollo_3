@@ -1,153 +1,120 @@
-<!---------------------------ENLACES--------------------------------->
-<title>Blogs</title>
-<link rel="stylesheet" href="/CSS/blogs.css" />
-<!-- Enlace CSS -->
-<link
-  rel="stylesheet"
-  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-  integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-  crossorigin="anonymous"
-  referrerpolicy="no-referrer"
-/>
-<%- include('partials/htmlhead'); -%>
-<!-- Enlace plantilla del head -->
-
-<!---------------------------FIN ENLACES--------------------------------->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blogs</title>
+    <link rel="stylesheet" href="/CSS/blogs.css" /> <!-- Enlace CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" /> <!-- AOS CSS -->
+    <%- include('partials/htmlhead'); -%> <!-- Enlace plantilla del head -->
+</head>
 <body>
-  <div class="banner">
-    <div class="content">
-      <h1>Bienvenido a Esencia</h1>
-      <p>Tu guía completa para la organización de eventos</p>
-      <p>
-        Explora nuestros blogs llenos de ideas y consejos para hacer de tu
-        evento una experiencia inolvidable.
-      </p>
-      <div class="arrow">
-        &#9660;
-        <!-- Flecha hacia abajo -->
-      </div>
+    <div class="banner">
+        <div class="content">
+            <h1>Bienvenido a Esencia</h1>
+            <p>Tu guía completa para la organización de eventos</p>
+            <p>Explora nuestros blogs llenos de ideas y consejos para hacer de tu evento una experiencia inolvidable.</p>
+            <div class="arrow">
+                &#9660; <!-- Flecha hacia abajo -->
+            </div>
+        </div>
     </div>
-  </div>
 
-  <!--aqui enpieza los blogs-->
-  <div class="contenedor">
-    <section class="seccionIzq">
-      <div class="search-container">
-        <input type="text" placeholder="Buscar..." />
-        <button><i class="fas fa-search"></i></button>
-      </div>
+    <!-- Aquí comienza la sección de blogs -->
+    <div class="contenedor">
+        <section class="seccionIzq" data-aos="fade-up" data-aos-delay="100">
+            <div class="search-container">
+                <input type="text" placeholder="Buscar..." />
+                <button><i class="fas fa-search"></i></button>
+            </div>
 
-      <section class="categorias">
-        <h3>Categorías</h3>
-        <div class="categoria" data-aos="fade-up">
-          <div class="icono"><i class="fas fa-calendar-alt"></i></div>
-          <h3>Planificación de Eventos</h3>
-          <p>
-            Consejos y estrategias para una planificación eficaz de eventos.
-          </p>
-        </div>
+            <section class="categorias">
+                <h3>Categorías</h3>
+                <div class="categoria" data-aos="fade-up">
+                    <div class="icono"><i class="fas fa-calendar-alt"></i></div>
+                    <h3>Planificación de Eventos</h3>
+                    <p>Consejos y estrategias para una planificación eficaz de eventos.</p>
+                </div>
 
-        <div class="categoria" data-aos="fade-up" data-aos-delay="100">
-          <div class="icono"><i class="fas fa-camera"></i></div>
-          <h3>Fotografía de Eventos</h3>
-          <p>
-            Técnicas y recomendaciones para capturar los mejores momentos de
-            eventos.
-          </p>
-        </div>
+                <div class="categoria" data-aos="fade-up" data-aos-delay="100">
+                    <div class="icono"><i class="fas fa-camera"></i></div>
+                    <h3>Fotografía de Eventos</h3>
+                    <p>Técnicas y recomendaciones para capturar los mejores momentos de eventos.</p>
+                </div>
 
-        <div class="categoria" data-aos="fade-up" data-aos-delay="200">
-          <div class="icono"><i class="fas fa-balance-scale"></i></div>
-          <h3>Equilibrio de Presupuestos</h3>
-          <p>Manejo y optimización de presupuestos para eventos.</p>
-        </div>
+                <div class="categoria" data-aos="fade-up" data-aos-delay="200">
+                    <div class="icono"><i class="fas fa-balance-scale"></i></div>
+                    <h3>Equilibrio de Presupuestos</h3>
+                    <p>Manejo y optimización de presupuestos para eventos.</p>
+                </div>
 
-        <div class="categoria" data-aos="fade-up" data-aos-delay="300">
-          <div class="icono"><i class="fas fa-users"></i></div>
-          <h3>Gestión de Invitados</h3>
-          <p>Consejos para manejar listas de invitados y confirmaciones.</p>
-        </div>
-      </section>
+                <div class="categoria" data-aos="fade-up" data-aos-delay="300">
+                    <div class="icono"><i class="fas fa-users"></i></div>
+                    <h3>Gestión de Invitados</h3>
+                    <p>Consejos para manejar listas de invitados y confirmaciones.</p>
+                </div>
+            </section>
 
-      <section class="top-posts">
-        <h2>Top de Posts Más Buscados</h2>
-        <ul id="post-list">
-          <!-- Aquí se insertarán dinámicamente los posts más buscados -->
-        </ul>
-      </section>
-    </section>
+            <section class="top-posts">
+                <h2>Top de Posts Más Buscados</h2>
+                <ul id="post-list">
+                    <!-- Aquí se insertarán dinámicamente los posts más buscados -->
+                </ul>
+            </section>
+        </section>
 
-    <section class="seccionDere">
-      <section class="blog-list">
-        <div class="container mt-5">
-          <h3 class="text-center mb-5" style="color: #27094d">Blogs</h3>
-          <div class="row" id="blogsContainer">
-            <!-- Blogs se añadirán dinámicamente aquí -->
-          </div>
-          <div class="text-center">
-            <a href="#" id="verMas" class="btn btn-primary">Ver más</a>
-            <a
-              href="#"
-              id="cargarMenos"
-              class="btn btn-primary"
-              style="display: none"
-              >Cargar menos</a
-            >
-          </div>
-        </div>
-      </section>
-    </section>
-  </div>
-
-  <!-- Modal para mostrar contenido completo del blog -->
-  <div
-    class="modal fade"
-    id="blogModal"
-    tabindex="-1"
-    role="dialog"
-    aria-labelledby="blogModalLabel"
-    aria-hidden="true"
-  >
-    <div class="modal-dialog modal-lg" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="blogModalLabel">Título del Blog</h5>
-          <button
-            type="button"
-            class="close"
-            data-dismiss="modal"
-            aria-label="Close"
-          >
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body" id="blogModalBody">
-          <!-- Contenido del blog se mostrará aquí -->
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">
-            Cerrar
-          </button>
-        </div>
-      </div>
+        <section class="seccionDere" data-aos="fade-up" data-aos-delay="100">
+            <section class="blog-list">
+                <div class="container mt-5">
+                    <h3 class="text-center mb-5" style="color: #27094d">Blogs</h3>
+                    <div class="row" id="blogsContainer">
+                        <!-- Blogs se añadirán dinámicamente aquí -->
+                    </div>
+                    <div class="text-center">
+                        <a href="#" id="verMas" class="btn btn-primary">Ver más</a>
+                        <a href="#" id="cargarMenos" class="btn btn-primary" style="display: none">Cargar menos</a>
+                    </div>
+                </div>
+            </section>
+        </section>
     </div>
-  </div>
 
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-  <script src="scripts.js"></script>
-  <!-- Archivo JS separado -->
-  <script src="/JS/blog_vermas.js"></script>
+    <!-- Modal para mostrar contenido completo del blog -->
+    <div class="modal fade" id="blogModal" tabindex="-1" role="dialog" aria-labelledby="blogModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="blogModalLabel">Título del Blog</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body" id="blogModalBody">
+                    <!-- Contenido del blog se mostrará aquí -->
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
-  <!-- Font Awesome icons (for the social media icons) -->
-  <script
-    src="https://kit.fontawesome.com/a076d05399.js"
-    crossorigin="anonymous"
-  ></script>
-  <script src="Bootstrap/js/bootstrap.min.js"></script>
-  <script src="/JS/scrip.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script> <!-- AOS JS -->
+    <script>
+        AOS.init();
+    </script>
+    <script src="/JS/blog_vermas.js"></script> <!-- Archivo JS separado para funcionalidad adicional -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script> <!-- Font Awesome icons -->
+    <script src="Bootstrap/js/bootstrap.min.js"></script>
+    <script src="/JS/scrip.js"></script> <!-- Tu archivo JS personalizado -->
 </body>
 
-<%- include('partials/htmlfooter'); -%>
-<!-- Enlace plantilla del Footer -->
+<%- include('partials/htmlfooter'); -%> <!-- Enlace plantilla del Footer -->
+</html>
